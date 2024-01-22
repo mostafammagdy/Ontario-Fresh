@@ -1,0 +1,14 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.notificationPreference {
+  padding: 0 24px 0 8px;
+  display: flex !important; /*ie compatibility*/
+}
+.notificationPreference label {
+  padding: 10px 0;
+}
+.notificationPreference:not(:last-child) label {
+  border-bottom: solid 1px lightgrey;
+}

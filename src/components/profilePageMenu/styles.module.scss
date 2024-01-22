@@ -1,0 +1,24 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.profileLink {
+  color: #6D6F7B;
+  text-decoration: none;
+}
+
+.sideMenuItem {
+  cursor: pointer;
+}
+
+.active h4, .sideMenuItem:hover {
+  color: #6D6F7B;
+  border-left: 4px solid #6D6F7B;
+  padding-left: 6px;
+  margin-left: -6px;
+  transition: 0.1s;
+}
+
+.active h4 svg {
+  fill: rgb(98, 100, 112) !important;
+}

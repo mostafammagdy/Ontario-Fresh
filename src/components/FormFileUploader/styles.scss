@@ -1,0 +1,133 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/forms";
+@use "../../assets/scss/variables/mixins";
+@use "../../assets/scss/variables/responsive";
+
+.formFileUploader {
+
+    &__errorAnchor {
+        
+        &:hover, &:focus {
+            color: colours.$errorTextFocus;
+        }
+
+    }
+
+    /*
+    &__label {
+
+    }
+    */
+
+    &__dragDropArea {
+
+        &__icon {
+
+            .dragAndDrop {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+
+                polygon {
+                    fill: colours.$green;
+                }
+
+            }
+
+        }
+
+        &__button {
+
+            &__label {
+
+                strong {
+                    text-decoration: underline;
+                }
+
+            }
+
+            &:hover, &:focus {
+                @extend %formButtonFocus;
+            }
+
+        }
+
+    }
+
+    &__dragDrop {
+
+        &:hover, &:focus {
+
+            + .formFileUploader__button {
+                @extend %formButtonFocus;
+            }
+
+        }
+
+    }
+
+    &__imageCropArea {
+
+        .ReactCrop {
+
+            @media #{mixins.scrMinWidth(responsive.$tablet_ipad_portrait_min_width)} {
+                margin-top: 0;
+                // width: 50%;
+            }
+
+        }
+
+        > div {
+
+            @media #{mixins.scrMinWidth(responsive.$tablet_ipad_portrait_min_width)} {
+                // width: 50%;
+            }
+
+            canvas {
+                margin: {
+                    right: auto;
+                    left: auto;
+                }
+                display: block;
+                
+                @media #{mixins.scrMinWidth(responsive.$tablet_ipad_portrait_min_width)} {
+                    margin: {
+                        right: 0.5em;
+                        left: 0.5em;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+    &__button {
+
+        &:hover, &:focus {
+            @extend %formButtonFocus;
+        }
+
+    }
+
+}
+
+.ReactCrop {
+    width: 269px;
+    
+    @media #{mixins.scrMinWidth(responsive.$tablet_ipad_portrait_min_width)} {
+        width: 318px;
+    }
+    
+    @media #{mixins.scrMinWidth(responsive.$desktop_min_width)} {
+        width: 414px;
+    }
+
+    &__image {
+        margin: {
+            bottom: 0;
+        }
+    }
+
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>email</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1724.000000, -132.000000)">
+        <g id="Group" transform="translate(1379.000000, 132.000000)">
+            <g id="email" transform="translate(345.000000, 0.000000)">
+                <path d="M41.8,8 L8.2,8 C5.89,8 4,9.96875 4,12.375 L4,38.625 C4,41.03125 5.89,43 8.2,43 L41.8,43 C44.11,43 46,41.03125 46,38.625 L46,12.375 C46,9.96875 44.11,8 41.8,8 Z M41.8,16.75 L25,27.6875 L8.2,16.75 L8.2,12.375 L25,23.3125 L41.8,12.375 L41.8,16.75 Z" id="Shape" fill="#00713F" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

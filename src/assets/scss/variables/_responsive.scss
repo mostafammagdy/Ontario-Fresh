@@ -1,0 +1,15 @@
+/* ***************** RESPONSIVE ***************** */
+
+/*
+    NOTE: Any viewport width less than $tablet_min_width’s value is a smartphone style.
+
+    Sass stylesheets that make use of these values are “mobile first”. Code your smartphone styles first, and then follow the order below.
+*/
+$tablet_min_width: 685px;
+$tablet_ipad_portrait_min_width: 768px;
+$desktop_min_width: 1024px;
+
+/* ***************** VALUES ***************** */
+
+$headerNavigationTabletBreakpoint: 845px;
+$container_max_width: 960px;

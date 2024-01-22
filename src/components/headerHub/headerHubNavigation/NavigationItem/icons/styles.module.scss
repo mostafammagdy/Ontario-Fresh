@@ -1,0 +1,50 @@
+@use '../../../../../assets/scss/variables/accessibility';
+@use '../../../../../assets/scss/variables/colours';
+@use '../../../../../assets/scss/variables/forms';
+@use '../../../../../assets/scss/variables/measurements';
+@use '../../../../../assets/scss/variables/mixins';
+@use '../../../../../assets/scss/variables/responsive';
+@use '../../../../../assets/scss/variables/typography';
+
+$navigationTabletTop: 0.6em;
+$navigationTabletBottom: 1em;
+$navigationTabletLinkBorderWidth: 0.25em;
+$navigationTabletLinkPaddingBottom: 0 0 0.1em;
+$navigationTabletLinkBorderBottom: 0.2em solid colours.$backgroundGrey;
+$navigationTabletLinkBorderWidthBottom: 0 0 0.2em;
+
+.headerHub {
+
+    &__icon {
+        width: 1.1em;
+        height: 1.1em;
+        margin-right: 0.5em;
+        display: inline-block;
+        position: relative;
+        top: 0.2em;
+    }
+
+    &__circle {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        overflow: hidden;
+        border-radius: 50%;
+        background-color: colours.$green;
+    }
+
+    &__messageCounter {
+        display: inline-block;
+        font: {
+            size: 0.7rem;
+            style: normal;
+            weight: 600;
+        }
+        line-height: 1.6;
+        text-align: center;
+        color: colours.$white;
+    }
+
+}

@@ -1,0 +1,1639 @@
+{
+    "current": {
+        "id": 3052,
+        "business_name": "Nice Farmer C.",
+        "slug": "nice-farmer-c",
+        "onf_users": [
+            {
+                "id": 3007,
+                "user": 3091,
+                "first_name": "Michael",
+                "last_name": "Anderson",
+                "email": "nice@broader.com",
+                "activated": true,
+                "is_owner": false,
+                "account": 3052,
+                "job_title": null,
+                "created_at": "2021-04-13T14:10:20.677548Z",
+                "updated_at": "2021-04-13T14:10:20.677554Z"
+            }
+        ],
+        "roles": [
+            {
+                "id": 5420,
+                "value": "seller",
+                "label": "SELLS",
+                "data": {
+                    "classifications": {
+                        "id": 5362,
+                        "details": {
+                            "appropriateforallergiesspecialdiets": {
+                                "display": "Appropriate for Allergies/Special Diets",
+                                "value": false
+                            },
+                            "artisanspecialty": {
+                                "display": "Artisan/Specialty",
+                                "value": false
+                            },
+                            "certifiedlocalsustainable": {
+                                "display": "Certified Local Sustainable",
+                                "value": false
+                            },
+                            "certifiedorganic": {
+                                "display": "Certified Organic",
+                                "value": true
+                            },
+                            "conventional": {
+                                "display": "Conventional",
+                                "value": true
+                            },
+                            "foodLandontariocertified": {
+                                "display": "Foodland Ontario Certified",
+                                "value": false
+                            },
+                            "halal": {
+                                "display": "Halal",
+                                "value": false
+                            },
+                            "kosher": {
+                                "display": "Kosher",
+                                "value": false
+                            },
+                            "naturalfocus": {
+                                "display": "Natural Focus",
+                                "value": false
+                            }
+                        },
+                        "slug": "nice-farmer-c",
+                        "appropriateforallergiesspecialdiets": false,
+                        "artisanspecialty": false,
+                        "certifiedlocalsustainable": false,
+                        "certifiedorganic": true,
+                        "conventional": true,
+                        "foodLandontariocertified": false,
+                        "halal": false,
+                        "kosher": false,
+                        "naturalfocus": false,
+                        "deleted": false,
+                        "created_at": "2021-04-13T14:10:20.663706Z",
+                        "account": 3052,
+                        "role": 5420
+                    },
+                    "safety_standards": {
+                        "id": 5362,
+                        "details": {
+                            "none": {
+                                "display": "None",
+                                "value": false
+                            },
+                            "sqf2000": {
+                                "display": "SQF 2000",
+                                "value": false
+                            },
+                            "sqf1000": {
+                                "display": "SQF 1000",
+                                "value": false
+                            },
+                            "sqf": {
+                                "display": "SQF",
+                                "value": false
+                            },
+                            "provinciallyinspected": {
+                                "display": "Provincially Inspected",
+                                "value": false
+                            },
+                            "ppm150": {
+                                "display": "PPM150",
+                                "value": false
+                            },
+                            "iso": {
+                                "display": "ISO",
+                                "value": false
+                            },
+                            "haccp": {
+                                "display": "HACCP",
+                                "value": false
+                            },
+                            "gmp": {
+                                "display": "GMP",
+                                "value": true
+                            },
+                            "globalgap": {
+                                "display": "Global G.A.P",
+                                "value": true
+                            },
+                            "gfcp": {
+                                "display": "GFCP",
+                                "value": false
+                            },
+                            "gap": {
+                                "display": "G.A.P",
+                                "value": false
+                            },
+                            "fpasafe": {
+                                "display": "FPA-SAFE",
+                                "value": false
+                            },
+                            "federallyinspected": {
+                                "display": "Federally Inspected",
+                                "value": false
+                            },
+                            "cantrace": {
+                                "display": "Can-Trace",
+                                "value": false
+                            },
+                            "brc": {
+                                "display": "BRC",
+                                "value": false
+                            }
+                        },
+                        "slug": "nice-farmer-c",
+                        "none": false,
+                        "sqf2000": false,
+                        "sqf1000": false,
+                        "sqf": false,
+                        "provinciallyinspected": false,
+                        "ppm150": false,
+                        "iso": false,
+                        "haccp": false,
+                        "gmp": true,
+                        "globalgap": true,
+                        "gfcp": false,
+                        "gap": false,
+                        "fpasafe": false,
+                        "federallyinspected": false,
+                        "cantrace": false,
+                        "brc": false,
+                        "deleted": false,
+                        "created_at": "2021-04-13T14:10:20.659692Z",
+                        "updated_at": "2021-04-13T14:10:20.659702Z",
+                        "account": 3052,
+                        "role": 5420
+                    },
+                    "premises_identification_number": false,
+                    "services_provided": {
+                        "id": 6007,
+                        "details": {
+                            "abattoirservics": {
+                                "display": "Abattoir Services (meat)",
+                                "value": false
+                            },
+                            "advertisingmarketingpromotions": {
+                                "display": "Advertising, Marketing, Promotions",
+                                "value": false
+                            },
+                            "coldstorage": {
+                                "display": "Cold Storage (Refrigerated Warehousing)",
+                                "value": false
+                            },
+                            "consolidationaggregationhub": {
+                                "display": "Consolidation, Aggregation, Hub Services",
+                                "value": false
+                            },
+                            "delivery": {
+                                "display": "Delivery",
+                                "value": false
+                            },
+                            "frozenstorage": {
+                                "display": "Frozen Storage",
+                                "value": false
+                            },
+                            "fullservicedistribution": {
+                                "display": "Full-Serviced Distribution",
+                                "value": false
+                            },
+                            "otherspecializedstorage": {
+                                "display": "Other Specialized Storage",
+                                "value": false
+                            },
+                            "postharvesthandlingpacking": {
+                                "display": "Post-Harvest Handling or Packing",
+                                "value": false
+                            },
+                            "processing": {
+                                "display": "Processing",
+                                "value": false
+                            },
+                            "sharingpuchaceorders": {
+                                "display": "Sharing Purchase Orders",
+                                "value": false
+                            },
+                            "transportationclimatecontrol": {
+                                "display": "Transportation and Climate Control",
+                                "value": false
+                            },
+                            "warehousing": {
+                                "display": "Warehousing",
+                                "value": false
+                            }
+                        },
+                        "slug": "nice-farmer-c",
+                        "abattoirservics": false,
+                        "advertisingmarketingpromotions": false,
+                        "coldstorage": false,
+                        "consolidationaggregationhub": false,
+                        "delivery": false,
+                        "frozenstorage": false,
+                        "fullservicedistribution": false,
+                        "otherspecializedstorage": false,
+                        "postharvesthandlingpacking": false,
+                        "processing": false,
+                        "sharingpuchaceorders": false,
+                        "transportationclimatecontrol": false,
+                        "warehousing": false,
+                        "deleted": false,
+                        "provided": true,
+                        "created_at": "2021-04-13T14:10:20.651958Z",
+                        "updated_at": "2021-04-13T14:10:20.651968Z",
+                        "account": 3052
+                    },
+                    "payment_methods": {
+                        "id": 3227,
+                        "details": {
+                            "cashondelivery": {
+                                "display": "Cash on Delivery",
+                                "value": true
+                            },
+                            "creditdebit": {
+                                "display": "Credit/Debit",
+                                "value": false
+                            },
+                            "purchaseorderinvoice": {
+                                "display": "Purchase Order/Invoice",
+                                "value": false
+                            }
+                        },
+                        "slug": "nice-farmer-c",
+                        "cashondelivery": true,
+                        "creditdebit": false,
+                        "purchaseorderinvoice": false,
+                        "deleted": false,
+                        "created_at": "2021-04-13T14:10:20.647428Z",
+                        "account": 3052,
+                        "role": 5420
+                    },
+                    "products": [
+                        {
+                            "id": 33508,
+                            "name": "__CATEGORY__",
+                            "name_suggest": [],
+                            "category": 0,
+                            "short": 0,
+                            "label": "Other",
+                            "account": 3052,
+                            "deleted": false,
+                            "slug": "nice-farmer-c",
+                            "parent": null,
+                            "category_order": 0
+                        },
+                        {
+                            "id": 33509,
+                            "name": "Craft Soda",
+                            "name_suggest": [
+                                {
+                                    "input": "0 Craft Soda %@% Craft Soda"
+                                },
+                                {
+                                    "input": "0 Soda Craft %@% Craft Soda"
+                                }
+                            ],
+                            "category": 0,
+                            "short": 0,
+                            "label": "Other",
+                            "account": 3052,
+                            "deleted": false,
+                            "slug": "nice-farmer-c",
+                            "parent": null,
+                            "category_order": 0
+                        },
+                        {
+                            "id": 33510,
+                            "name": "Barley",
+                            "name_suggest": [
+                                {
+                                    "input": "0 Barley %@% Barley"
+                                }
+                            ],
+                            "category": 0,
+                            "short": 0,
+                            "label": "Other",
+                            "account": 3052,
+                            "deleted": false,
+                            "slug": "nice-farmer-c",
+                            "parent": null,
+                            "category_order": 0
+                        },
+                        {
+                            "id": 33511,
+                            "name": "Hops",
+                            "name_suggest": [
+                                {
+                                    "input": "0 Hops %@% Hops"
+                                }
+                            ],
+                            "category": 0,
+                            "short": 0,
+                            "label": "Other",
+                            "account": 3052,
+                            "deleted": false,
+                            "slug": "nice-farmer-c",
+                            "parent": null,
+                            "category_order": 0
+                        },
+                        {
+                            "id": 33512,
+                            "name": "Rye grain",
+                            "name_suggest": [
+                                {
+                                    "input": "0 Rye grain %@% Rye grain"
+                                },
+                                {
+                                    "input": "0 grain Rye %@% Rye grain"
+                                }
+                            ],
+                            "category": 0,
+                            "short": 0,
+                            "label": "Other",
+                            "account": 3052,
+                            "deleted": false,
+                            "slug": "nice-farmer-c",
+                            "parent": null,
+                            "category_order": 0
+                        }
+                    ],
+                    "category": {
+                        "Co-op": false,
+                        "Food Bank": false,
+                        "Grower/Producer": false,
+                        "Community Supported Agriculture": false,
+                        "Wholesale": false,
+                        "Greenhouse": false,
+                        "Aggregator or Hub": false,
+                        "Foodservice Provider": false,
+                        "Winery": false,
+                        "Brewery": false,
+                        "Bakery": false,
+                        "School Supplier/Vendor": false,
+                        "Seller": false
+                    },
+                    "role_details": {
+                        "delivery": 2,
+                        "scale": 1,
+                        "business_scale": [
+                            "SML",
+                            "MED"
+                        ],
+                        "edited": true,
+                        "custom_process": 2,
+                        "co_packing": 2,
+                        "private_label": 2,
+                        "third_party_insurance": false
+                    }
+                }
+            },
+            {
+                "id": 5425,
+                "value": "buyer",
+                "label": "BUYS",
+                "data": {
+                    "classifications": {
+                        "id": 5369,
+                        "details": {
+                            "appropriateforallergiesspecialdiets": {
+                                "display": "Appropriate for Allergies/Special Diets",
+                                "value": false
+                            },
+                            "artisanspecialty": {
+                                "display": "Artisan/Specialty",
+                                "value": false
+                            },
+                            "certifiedlocalsustainable": {
+                                "display": "Certified Local Sustainable",
+                                "value": false
+                            },
+                            "certifiedorganic": {
+                                "display": "Certified Organic",
+                                "value": false
+                            },
+                            "conventional": {
+                                "display": "Conventional",
+                                "value": false
+                            },
+                            "foodLandontariocertified": {
+                                "display": "Foodland Ontario Certified",
+                                "value": false
+                            },
+                            "halal": {
+                                "display": "Halal",
+                                "value": false
+                            },
+                            "kosher": {
+                                "display": "Kosher",
+                                "value": false
+                            },
+                            "naturalfocus": {
+                                "display": "Natural Focus",
+                                "value": false
+                            }
+                        },
+                        "slug": "nice-farmer-c",
+                        "appropriateforallergiesspecialdiets": false,
+                        "artisanspecialty": false,
+                        "certifiedlocalsustainable": false,
+                        "certifiedorganic": false,
+                        "conventional": false,
+                        "foodLandontariocertified": false,
+                        "halal": false,
+                        "kosher": false,
+                        "naturalfocus": false,
+                        "deleted": false,
+                        "created_at": "2021-04-30T19:13:12.329343Z",
+                        "account": 3052,
+                        "role": 5425
+                    },
+                    "safety_standards": {
+                        "id": 5369,
+                        "details": {
+                            "none": {
+                                "display": "None",
+                                "value": false
+                            },
+                            "sqf2000": {
+                                "display": "SQF 2000",
+                                "value": false
+                            },
+                            "sqf1000": {
+                                "display": "SQF 1000",
+                                "value": false
+                            },
+                            "sqf": {
+                                "display": "SQF",
+                                "value": false
+                            },
+                            "provinciallyinspected": {
+                                "display": "Provincially Inspected",
+                                "value": false
+                            },
+                            "ppm150": {
+                                "display": "PPM150",
+                                "value": false
+                            },
+                            "iso": {
+                                "display": "ISO",
+                                "value": false
+                            },
+                            "haccp": {
+                                "display": "HACCP",
+                                "value": false
+                            },
+                            "gmp": {
+                                "display": "GMP",
+                                "value": false
+                            },
+                            "globalgap": {
+                                "display": "Global G.A.P",
+                                "value": false
+                            },
+                            "gfcp": {
+                                "display": "GFCP",
+                                "value": false
+                            },
+                            "gap": {
+                                "display": "G.A.P",
+                                "value": false
+                            },
+                            "fpasafe": {
+                                "display": "FPA-SAFE",
+                                "value": false
+                            },
+                            "federallyinspected": {
+                                "display": "Federally Inspected",
+                                "value": false
+                            },
+                            "cantrace": {
+                                "display": "Can-Trace",
+                                "value": false
+                            },
+                            "brc": {
+                                "display": "BRC",
+                                "value": false
+                            }
+                        },
+                        "slug": "nice-farmer-c",
+                        "none": false,
+                        "sqf2000": false,
+                        "sqf1000": false,
+                        "sqf": false,
+                        "provinciallyinspected": false,
+                        "ppm150": false,
+                        "iso": false,
+                        "haccp": false,
+                        "gmp": false,
+                        "globalgap": false,
+                        "gfcp": false,
+                        "gap": false,
+                        "fpasafe": false,
+                        "federallyinspected": false,
+                        "cantrace": false,
+                        "brc": false,
+                        "deleted": false,
+                        "created_at": "2021-04-30T19:13:12.309061Z",
+                        "updated_at": "2021-04-30T19:13:12.309070Z",
+                        "account": 3052,
+                        "role": 5425
+                    },
+                    "premises_identification_number": false,
+                    "services_needed": {
+                        "id": 6008,
+                        "details": {
+                            "abattoirservics": {
+                                "display": "Abattoir Services (meat)",
+                                "value": false
+                            },
+                            "advertisingmarketingpromotions": {
+                                "display": "Advertising, Marketing, Promotions",
+                                "value": false
+                            },
+                            "coldstorage": {
+                                "display": "Cold Storage (Refrigerated Warehousing)",
+                                "value": false
+                            },
+                            "consolidationaggregationhub": {
+                                "display": "Consolidation, Aggregation, Hub Services",
+                                "value": false
+                            },
+                            "delivery": {
+                                "display": "Delivery",
+                                "value": false
+                            },
+                            "frozenstorage": {
+                                "display": "Frozen Storage",
+                                "value": false
+                            },
+                            "fullservicedistribution": {
+                                "display": "Full-Serviced Distribution",
+                                "value": false
+                            },
+                            "otherspecializedstorage": {
+                                "display": "Other Specialized Storage",
+                                "value": false
+                            },
+                            "postharvesthandlingpacking": {
+                                "display": "Post-Harvest Handling or Packing",
+                                "value": false
+                            },
+                            "processing": {
+                                "display": "Processing",
+                                "value": true
+                            },
+                            "sharingpuchaceorders": {
+                                "display": "Sharing Purchase Orders",
+                                "value": false
+                            },
+                            "transportationclimatecontrol": {
+                                "display": "Transportation and Climate Control",
+                                "value": false
+                            },
+                            "warehousing": {
+                                "display": "Warehousing",
+                                "value": false
+                            }
+                        },
+                        "slug": "nice-farmer-c",
+                        "abattoirservics": false,
+                        "advertisingmarketingpromotions": false,
+                        "coldstorage": false,
+                        "consolidationaggregationhub": false,
+                        "delivery": false,
+                        "frozenstorage": false,
+                        "fullservicedistribution": false,
+                        "otherspecializedstorage": false,
+                        "postharvesthandlingpacking": false,
+                        "processing": true,
+                        "sharingpuchaceorders": false,
+                        "transportationclimatecontrol": false,
+                        "warehousing": false,
+                        "deleted": false,
+                        "provided": false,
+                        "created_at": "2021-04-13T14:10:20.655787Z",
+                        "updated_at": "2021-04-13T14:10:20.655797Z",
+                        "account": 3052
+                    },
+                    "payment_methods": {
+                        "id": 3232,
+                        "details": {
+                            "cashondelivery": {
+                                "display": "Cash on Delivery",
+                                "value": false
+                            },
+                            "creditdebit": {
+                                "display": "Credit/Debit",
+                                "value": false
+                            },
+                            "purchaseorderinvoice": {
+                                "display": "Purchase Order/Invoice",
+                                "value": false
+                            }
+                        },
+                        "slug": "nice-farmer-c",
+                        "cashondelivery": false,
+                        "creditdebit": false,
+                        "purchaseorderinvoice": false,
+                        "deleted": false,
+                        "created_at": "2021-04-30T19:13:12.291123Z",
+                        "account": 3052,
+                        "role": 5425
+                    },
+                    "products": [],
+                    "category": {
+                        "Co-op": false,
+                        "Buyer": false,
+                        "Food Bank": false,
+                        "Grocery Store": false,
+                        "Institution": false,
+                        "Chef": false,
+                        "Restaurant": false,
+                        "Retail Operator": false,
+                        "Nursery": false,
+                        "School or Cafeteria": false
+                    },
+                    "role_details": {
+                        "delivery": 2,
+                        "scale": 1,
+                        "business_scale": [
+                            "SML"
+                        ],
+                        "edited": false,
+                        "custom_process": 2,
+                        "co_packing": 2,
+                        "private_label": 2,
+                        "third_party_insurance": false
+                    }
+                }
+            },
+            {
+                "id": 5426,
+                "value": "processor",
+                "label": "PROCESSES",
+                "data": {
+                    "classifications": {
+                        "id": 5368,
+                        "details": {
+                            "appropriateforallergiesspecialdiets": {
+                                "display": "Appropriate for Allergies/Special Diets",
+                                "value": false
+                            },
+                            "artisanspecialty": {
+                                "display": "Artisan/Specialty",
+                                "value": false
+                            },
+                            "certifiedlocalsustainable": {
+                                "display": "Certified Local Sustainable",
+                                "value": false
+                            },
+                            "certifiedorganic": {
+                                "display": "Certified Organic",
+                                "value": false
+                            },
+                            "conventional": {
+                                "display": "Conventional",
+                                "value": false
+                            },
+                            "foodLandontariocertified": {
+                                "display": "Foodland Ontario Certified",
+                                "value": false
+                            },
+                            "halal": {
+                                "display": "Halal",
+                                "value": false
+                            },
+                            "kosher": {
+                                "display": "Kosher",
+                                "value": false
+                            },
+                            "naturalfocus": {
+                                "display": "Natural Focus",
+                                "value": false
+                            }
+                        },
+                        "slug": "nice-farmer-c",
+                        "appropriateforallergiesspecialdiets": false,
+                        "artisanspecialty": false,
+                        "certifiedlocalsustainable": false,
+                        "certifiedorganic": false,
+                        "conventional": false,
+                        "foodLandontariocertified": false,
+                        "halal": false,
+                        "kosher": false,
+                        "naturalfocus": false,
+                        "deleted": false,
+                        "created_at": "2021-04-30T19:13:12.306806Z",
+                        "account": 3052,
+                        "role": 5426
+                    },
+                    "safety_standards": {
+                        "id": 5368,
+                        "details": {
+                            "none": {
+                                "display": "None",
+                                "value": false
+                            },
+                            "sqf2000": {
+                                "display": "SQF 2000",
+                                "value": false
+                            },
+                            "sqf1000": {
+                                "display": "SQF 1000",
+                                "value": false
+                            },
+                            "sqf": {
+                                "display": "SQF",
+                                "value": false
+                            },
+                            "provinciallyinspected": {
+                                "display": "Provincially Inspected",
+                                "value": false
+                            },
+                            "ppm150": {
+                                "display": "PPM150",
+                                "value": false
+                            },
+                            "iso": {
+                                "display": "ISO",
+                                "value": false
+                            },
+                            "haccp": {
+                                "display": "HACCP",
+                                "value": false
+                            },
+                            "gmp": {
+                                "display": "GMP",
+                                "value": false
+                            },
+                            "globalgap": {
+                                "display": "Global G.A.P",
+                                "value": false
+                            },
+                            "gfcp": {
+                                "display": "GFCP",
+                                "value": false
+                            },
+                            "gap": {
+                                "display": "G.A.P",
+                                "value": false
+                            },
+                            "fpasafe": {
+                                "display": "FPA-SAFE",
+                                "value": false
+                            },
+                            "federallyinspected": {
+                                "display": "Federally Inspected",
+                                "value": false
+                            },
+                            "cantrace": {
+                                "display": "Can-Trace",
+                                "value": false
+                            },
+                            "brc": {
+                                "display": "BRC",
+                                "value": false
+                            }
+                        },
+                        "slug": "nice-farmer-c",
+                        "none": false,
+                        "sqf2000": false,
+                        "sqf1000": false,
+                        "sqf": false,
+                        "provinciallyinspected": false,
+                        "ppm150": false,
+                        "iso": false,
+                        "haccp": false,
+                        "gmp": false,
+                        "globalgap": false,
+                        "gfcp": false,
+                        "gap": false,
+                        "fpasafe": false,
+                        "federallyinspected": false,
+                        "cantrace": false,
+                        "brc": false,
+                        "deleted": false,
+                        "created_at": "2021-04-30T19:13:12.293662Z",
+                        "updated_at": "2021-04-30T19:13:12.293672Z",
+                        "account": 3052,
+                        "role": 5426
+                    },
+                    "premises_identification_number": false,
+                    "services_needed": {
+                        "id": 6008,
+                        "details": {
+                            "abattoirservics": {
+                                "display": "Abattoir Services (meat)",
+                                "value": false
+                            },
+                            "advertisingmarketingpromotions": {
+                                "display": "Advertising, Marketing, Promotions",
+                                "value": false
+                            },
+                            "coldstorage": {
+                                "display": "Cold Storage (Refrigerated Warehousing)",
+                                "value": false
+                            },
+                            "consolidationaggregationhub": {
+                                "display": "Consolidation, Aggregation, Hub Services",
+                                "value": false
+                            },
+                            "delivery": {
+                                "display": "Delivery",
+                                "value": false
+                            },
+                            "frozenstorage": {
+                                "display": "Frozen Storage",
+                                "value": false
+                            },
+                            "fullservicedistribution": {
+                                "display": "Full-Serviced Distribution",
+                                "value": false
+                            },
+                            "otherspecializedstorage": {
+                                "display": "Other Specialized Storage",
+                                "value": false
+                            },
+                            "postharvesthandlingpacking": {
+                                "display": "Post-Harvest Handling or Packing",
+                                "value": false
+                            },
+                            "processing": {
+                                "display": "Processing",
+                                "value": true
+                            },
+                            "sharingpuchaceorders": {
+                                "display": "Sharing Purchase Orders",
+                                "value": false
+                            },
+                            "transportationclimatecontrol": {
+                                "display": "Transportation and Climate Control",
+                                "value": false
+                            },
+                            "warehousing": {
+                                "display": "Warehousing",
+                                "value": false
+                            }
+                        },
+                        "slug": "nice-farmer-c",
+                        "abattoirservics": false,
+                        "advertisingmarketingpromotions": false,
+                        "coldstorage": false,
+                        "consolidationaggregationhub": false,
+                        "delivery": false,
+                        "frozenstorage": false,
+                        "fullservicedistribution": false,
+                        "otherspecializedstorage": false,
+                        "postharvesthandlingpacking": false,
+                        "processing": true,
+                        "sharingpuchaceorders": false,
+                        "transportationclimatecontrol": false,
+                        "warehousing": false,
+                        "deleted": false,
+                        "provided": false,
+                        "created_at": "2021-04-13T14:10:20.655787Z",
+                        "updated_at": "2021-04-13T14:10:20.655797Z",
+                        "account": 3052
+                    },
+                    "products": [],
+                    "services_provided": {
+                        "id": 6007,
+                        "details": {
+                            "abattoirservics": {
+                                "display": "Abattoir Services (meat)",
+                                "value": false
+                            },
+                            "advertisingmarketingpromotions": {
+                                "display": "Advertising, Marketing, Promotions",
+                                "value": false
+                            },
+                            "coldstorage": {
+                                "display": "Cold Storage (Refrigerated Warehousing)",
+                                "value": false
+                            },
+                            "consolidationaggregationhub": {
+                                "display": "Consolidation, Aggregation, Hub Services",
+                                "value": false
+                            },
+                            "delivery": {
+                                "display": "Delivery",
+                                "value": false
+                            },
+                            "frozenstorage": {
+                                "display": "Frozen Storage",
+                                "value": false
+                            },
+                            "fullservicedistribution": {
+                                "display": "Full-Serviced Distribution",
+                                "value": false
+                            },
+                            "otherspecializedstorage": {
+                                "display": "Other Specialized Storage",
+                                "value": false
+                            },
+                            "postharvesthandlingpacking": {
+                                "display": "Post-Harvest Handling or Packing",
+                                "value": false
+                            },
+                            "processing": {
+                                "display": "Processing",
+                                "value": false
+                            },
+                            "sharingpuchaceorders": {
+                                "display": "Sharing Purchase Orders",
+                                "value": false
+                            },
+                            "transportationclimatecontrol": {
+                                "display": "Transportation and Climate Control",
+                                "value": false
+                            },
+                            "warehousing": {
+                                "display": "Warehousing",
+                                "value": false
+                            }
+                        },
+                        "slug": "nice-farmer-c",
+                        "abattoirservics": false,
+                        "advertisingmarketingpromotions": false,
+                        "coldstorage": false,
+                        "consolidationaggregationhub": false,
+                        "delivery": false,
+                        "frozenstorage": false,
+                        "fullservicedistribution": false,
+                        "otherspecializedstorage": false,
+                        "postharvesthandlingpacking": false,
+                        "processing": false,
+                        "sharingpuchaceorders": false,
+                        "transportationclimatecontrol": false,
+                        "warehousing": false,
+                        "deleted": false,
+                        "provided": true,
+                        "created_at": "2021-04-13T14:10:20.651958Z",
+                        "updated_at": "2021-04-13T14:10:20.651968Z",
+                        "account": 3052
+                    },
+                    "market_types": {
+                        "id": 715,
+                        "details": {
+                            "retail": {
+                                "display": "Retail",
+                                "value": false
+                            },
+                            "restaurantsorfoodservice": {
+                                "display": "Restaurants or Food Service",
+                                "value": false
+                            },
+                            "largescalefoodservice": {
+                                "display": "Large-scale Food Service",
+                                "value": false
+                            },
+                            "furtherprocessing": {
+                                "display": "Further Processing",
+                                "value": false
+                            }
+                        },
+                        "slug": "nice-farmer-c",
+                        "retail": false,
+                        "restaurantsorfoodservice": false,
+                        "largescalefoodservice": false,
+                        "furtherprocessing": false,
+                        "deleted": false,
+                        "created_at": "2021-04-30T19:13:12.328680Z",
+                        "updated_at": "2021-04-30T19:13:12.328691Z",
+                        "account": 3052,
+                        "role": 5426
+                    },
+                    "processing_types": {
+                        "id": 715,
+                        "details": {
+                            "winemaking": {
+                                "display": "Wine Making",
+                                "value": false
+                            },
+                            "smoking": {
+                                "display": "Smoking",
+                                "value": false
+                            },
+                            "pureeing": {
+                                "display": "Pureeing",
+                                "value": false
+                            },
+                            "peeling": {
+                                "display": "Peeling",
+                                "value": false
+                            },
+                            "packing": {
+                                "display": "Packing",
+                                "value": false
+                            },
+                            "otherdairyprocessing": {
+                                "display": "Other Dairy Processing",
+                                "value": false
+                            },
+                            "milling": {
+                                "display": "Milling",
+                                "value": false
+                            },
+                            "juicingpressing": {
+                                "display": "Juicing/Pressing",
+                                "value": false
+                            },
+                            "furthermeatprocessing": {
+                                "display": "Further Meat Processing",
+                                "value": false
+                            },
+                            "freezing": {
+                                "display": "Freezing",
+                                "value": false
+                            },
+                            "drying": {
+                                "display": "Drying",
+                                "value": false
+                            },
+                            "distilling": {
+                                "display": "Distilling",
+                                "value": false
+                            },
+                            "curing": {
+                                "display": "Curing",
+                                "value": false
+                            },
+                            "cooking": {
+                                "display": "Cooking",
+                                "value": false
+                            },
+                            "choppingdicingslicing": {
+                                "display": "Chopping/Dicing/Slicing",
+                                "value": false
+                            },
+                            "cheesemaking": {
+                                "display": "Cheese Making",
+                                "value": false
+                            },
+                            "canning": {
+                                "display": "Canning",
+                                "value": false
+                            },
+                            "brewing": {
+                                "display": "Brewing",
+                                "value": false
+                            },
+                            "abattoirservics": {
+                                "display": "Abattoir Services",
+                                "value": false
+                            },
+                            "other": {
+                                "display": "Other",
+                                "value": false
+                            },
+                            "baking": {
+                                "display": "Baking",
+                                "value": false
+                            }
+                        },
+                        "slug": "nice-farmer-c",
+                        "winemaking": false,
+                        "smoking": false,
+                        "pureeing": false,
+                        "peeling": false,
+                        "packing": false,
+                        "otherdairyprocessing": false,
+                        "milling": false,
+                        "juicingpressing": false,
+                        "furthermeatprocessing": false,
+                        "freezing": false,
+                        "drying": false,
+                        "distilling": false,
+                        "curing": false,
+                        "cooking": false,
+                        "choppingdicingslicing": false,
+                        "cheesemaking": false,
+                        "canning": false,
+                        "brewing": false,
+                        "abattoirservics": false,
+                        "other": false,
+                        "baking": false,
+                        "deleted": false,
+                        "created_at": "2021-04-30T19:13:12.314246Z",
+                        "updated_at": "2021-04-30T19:13:12.314257Z",
+                        "account": 3052,
+                        "role": 5426
+                    },
+                    "category": {
+                        "Processor": false,
+                        "Custom Processor": false
+                    },
+                    "role_details": {
+                        "delivery": 2,
+                        "scale": 1,
+                        "business_scale": [
+                            "SML"
+                        ],
+                        "edited": false,
+                        "custom_process": 2,
+                        "co_packing": 2,
+                        "private_label": 2,
+                        "third_party_insurance": false
+                    }
+                }
+            },
+            {
+                "id": 5427,
+                "value": "service_provider",
+                "label": "BUSINESS OPPORTUNITIES",
+                "data": {
+                    "premises_identification_number": false,
+                    "services_needed": {
+                        "id": 6008,
+                        "details": {
+                            "abattoirservics": {
+                                "display": "Abattoir Services (meat)",
+                                "value": false
+                            },
+                            "advertisingmarketingpromotions": {
+                                "display": "Advertising, Marketing, Promotions",
+                                "value": false
+                            },
+                            "coldstorage": {
+                                "display": "Cold Storage (Refrigerated Warehousing)",
+                                "value": false
+                            },
+                            "consolidationaggregationhub": {
+                                "display": "Consolidation, Aggregation, Hub Services",
+                                "value": false
+                            },
+                            "delivery": {
+                                "display": "Delivery",
+                                "value": false
+                            },
+                            "frozenstorage": {
+                                "display": "Frozen Storage",
+                                "value": false
+                            },
+                            "fullservicedistribution": {
+                                "display": "Full-Serviced Distribution",
+                                "value": false
+                            },
+                            "otherspecializedstorage": {
+                                "display": "Other Specialized Storage",
+                                "value": false
+                            },
+                            "postharvesthandlingpacking": {
+                                "display": "Post-Harvest Handling or Packing",
+                                "value": false
+                            },
+                            "processing": {
+                                "display": "Processing",
+                                "value": true
+                            },
+                            "sharingpuchaceorders": {
+                                "display": "Sharing Purchase Orders",
+                                "value": false
+                            },
+                            "transportationclimatecontrol": {
+                                "display": "Transportation and Climate Control",
+                                "value": false
+                            },
+                            "warehousing": {
+                                "display": "Warehousing",
+                                "value": false
+                            }
+                        },
+                        "slug": "nice-farmer-c",
+                        "abattoirservics": false,
+                        "advertisingmarketingpromotions": false,
+                        "coldstorage": false,
+                        "consolidationaggregationhub": false,
+                        "delivery": false,
+                        "frozenstorage": false,
+                        "fullservicedistribution": false,
+                        "otherspecializedstorage": false,
+                        "postharvesthandlingpacking": false,
+                        "processing": true,
+                        "sharingpuchaceorders": false,
+                        "transportationclimatecontrol": false,
+                        "warehousing": false,
+                        "deleted": false,
+                        "provided": false,
+                        "created_at": "2021-04-13T14:10:20.655787Z",
+                        "updated_at": "2021-04-13T14:10:20.655797Z",
+                        "account": 3052
+                    },
+                    "services_provided": {
+                        "id": 6007,
+                        "details": {
+                            "abattoirservics": {
+                                "display": "Abattoir Services (meat)",
+                                "value": false
+                            },
+                            "advertisingmarketingpromotions": {
+                                "display": "Advertising, Marketing, Promotions",
+                                "value": false
+                            },
+                            "coldstorage": {
+                                "display": "Cold Storage (Refrigerated Warehousing)",
+                                "value": false
+                            },
+                            "consolidationaggregationhub": {
+                                "display": "Consolidation, Aggregation, Hub Services",
+                                "value": false
+                            },
+                            "delivery": {
+                                "display": "Delivery",
+                                "value": false
+                            },
+                            "frozenstorage": {
+                                "display": "Frozen Storage",
+                                "value": false
+                            },
+                            "fullservicedistribution": {
+                                "display": "Full-Serviced Distribution",
+                                "value": false
+                            },
+                            "otherspecializedstorage": {
+                                "display": "Other Specialized Storage",
+                                "value": false
+                            },
+                            "postharvesthandlingpacking": {
+                                "display": "Post-Harvest Handling or Packing",
+                                "value": false
+                            },
+                            "processing": {
+                                "display": "Processing",
+                                "value": false
+                            },
+                            "sharingpuchaceorders": {
+                                "display": "Sharing Purchase Orders",
+                                "value": false
+                            },
+                            "transportationclimatecontrol": {
+                                "display": "Transportation and Climate Control",
+                                "value": false
+                            },
+                            "warehousing": {
+                                "display": "Warehousing",
+                                "value": false
+                            }
+                        },
+                        "slug": "nice-farmer-c",
+                        "abattoirservics": false,
+                        "advertisingmarketingpromotions": false,
+                        "coldstorage": false,
+                        "consolidationaggregationhub": false,
+                        "delivery": false,
+                        "frozenstorage": false,
+                        "fullservicedistribution": false,
+                        "otherspecializedstorage": false,
+                        "postharvesthandlingpacking": false,
+                        "processing": false,
+                        "sharingpuchaceorders": false,
+                        "transportationclimatecontrol": false,
+                        "warehousing": false,
+                        "deleted": false,
+                        "provided": true,
+                        "created_at": "2021-04-13T14:10:20.651958Z",
+                        "updated_at": "2021-04-13T14:10:20.651968Z",
+                        "account": 3052
+                    },
+                    "category": {
+                        "Distributor": false,
+                        "Packer": false,
+                        "Government": false,
+                        "Input Provider": false,
+                        "Packaging, Shipping etc.": false,
+                        "Logistics": false,
+                        "Equipment & Machinery Sales": false,
+                        "Other Support Industry": false,
+                        "Other Agricultural Supporter": false,
+                        "Marketing and Advertising": false,
+                        "Transportation and Climate Control": false
+                    },
+                    "role_details": {
+                        "delivery": 2,
+                        "scale": 1,
+                        "business_scale": [
+                            "SML"
+                        ],
+                        "edited": false,
+                        "custom_process": 2,
+                        "co_packing": 2,
+                        "private_label": 2,
+                        "third_party_insurance": false
+                    }
+                }
+            }
+        ],
+        "description": "A wonderful farm owned by a wonderful farmer.",
+        "photo_file_name": "https://d2f8amc6lmzigh.cloudfront.net/account/3052/blob",
+        "media": {
+            "photos": []
+        },
+        "addresses": [
+            {
+                "id": 48,
+                "address_1": "345 West St.",
+                "address_2": "Where I do my business.",
+                "city": "Napanee",
+                "province": "Ontario",
+                "country": "Canada",
+                "postal_code": "L43 5T8",
+                "phone": null,
+                "latitude": 0,
+                "longitude": 0,
+                "description": "Office",
+                "created_at": "2021-04-23T17:12:12.856894Z",
+                "slug": "nice-farmer-c"
+            }
+        ],
+        "editable": true,
+        "greenbelt_location": false,
+        "premises_identification_number": false,
+        "contacts": [
+            {
+                "id": 1085,
+                "slug": "nice-farmer-c",
+                "name": "Oscar Anderson",
+                "position": "Son of farmer",
+                "phone": "4166789432",
+                "fax": null,
+                "cell": null,
+                "email": null,
+                "deleted": false,
+                "created_at": "2021-04-23T17:11:30.306151Z",
+                "updated_at": "2021-04-23T17:11:30.306161Z",
+                "account": 3052
+            }
+        ],
+        "phone": null,
+        "fax": null,
+        "cell": null,
+        "email": "mike@napanee.com",
+        "website": "http://mikenice.com/",
+        "twitter": "https://twitter.com/farmernice",
+        "facebook": "https://facebook.com/farmernice",
+        "instagram": "https://www.instagram.com/farmernice",
+        "linkedin": "https://linkedin.com/farmernice",
+        "youtube": null,
+        "online_store": "http://shop.mikenice.com/",
+        "onboarding": true,
+        "is_manager": false,
+        "organizations": [],
+        "accounts": [],
+        "files": [
+            {
+                "id": 618,
+                "created": "2021-04-23T17:25:22.677411Z",
+                "updated": "2021-04-23T17:25:22.677381Z",
+                "public": true,
+                "can_view": [],
+                "can_edit": [],
+                "file_data": "files/56e92875-5e16-4aa3-ab3a-ac0388347923/AGM_program_cover.doc"
+            }
+        ],
+        "category": [],
+        "services_needed": {
+            "id": 6008,
+            "details": {
+                "abattoirservics": {
+                    "display": "Abattoir Services (meat)",
+                    "value": false
+                },
+                "advertisingmarketingpromotions": {
+                    "display": "Advertising, Marketing, Promotions",
+                    "value": false
+                },
+                "coldstorage": {
+                    "display": "Cold Storage (Refrigerated Warehousing)",
+                    "value": false
+                },
+                "consolidationaggregationhub": {
+                    "display": "Consolidation, Aggregation, Hub Services",
+                    "value": false
+                },
+                "delivery": {
+                    "display": "Delivery",
+                    "value": false
+                },
+                "frozenstorage": {
+                    "display": "Frozen Storage",
+                    "value": false
+                },
+                "fullservicedistribution": {
+                    "display": "Full-Serviced Distribution",
+                    "value": false
+                },
+                "otherspecializedstorage": {
+                    "display": "Other Specialized Storage",
+                    "value": false
+                },
+                "postharvesthandlingpacking": {
+                    "display": "Post-Harvest Handling or Packing",
+                    "value": false
+                },
+                "processing": {
+                    "display": "Processing",
+                    "value": true
+                },
+                "sharingpuchaceorders": {
+                    "display": "Sharing Purchase Orders",
+                    "value": false
+                },
+                "transportationclimatecontrol": {
+                    "display": "Transportation and Climate Control",
+                    "value": false
+                },
+                "warehousing": {
+                    "display": "Warehousing",
+                    "value": false
+                }
+            },
+            "slug": "nice-farmer-c",
+            "abattoirservics": false,
+            "advertisingmarketingpromotions": false,
+            "coldstorage": false,
+            "consolidationaggregationhub": false,
+            "delivery": false,
+            "frozenstorage": false,
+            "fullservicedistribution": false,
+            "otherspecializedstorage": false,
+            "postharvesthandlingpacking": false,
+            "processing": true,
+            "sharingpuchaceorders": false,
+            "transportationclimatecontrol": false,
+            "warehousing": false,
+            "deleted": false,
+            "provided": false,
+            "created_at": "2021-04-13T14:10:20.655787Z",
+            "updated_at": "2021-04-13T14:10:20.655797Z",
+            "account": 3052
+        },
+        "services_provided": {
+            "id": 6007,
+            "details": {
+                "abattoirservics": {
+                    "display": "Abattoir Services (meat)",
+                    "value": false
+                },
+                "advertisingmarketingpromotions": {
+                    "display": "Advertising, Marketing, Promotions",
+                    "value": false
+                },
+                "coldstorage": {
+                    "display": "Cold Storage (Refrigerated Warehousing)",
+                    "value": false
+                },
+                "consolidationaggregationhub": {
+                    "display": "Consolidation, Aggregation, Hub Services",
+                    "value": false
+                },
+                "delivery": {
+                    "display": "Delivery",
+                    "value": false
+                },
+                "frozenstorage": {
+                    "display": "Frozen Storage",
+                    "value": false
+                },
+                "fullservicedistribution": {
+                    "display": "Full-Serviced Distribution",
+                    "value": false
+                },
+                "otherspecializedstorage": {
+                    "display": "Other Specialized Storage",
+                    "value": false
+                },
+                "postharvesthandlingpacking": {
+                    "display": "Post-Harvest Handling or Packing",
+                    "value": false
+                },
+                "processing": {
+                    "display": "Processing",
+                    "value": false
+                },
+                "sharingpuchaceorders": {
+                    "display": "Sharing Purchase Orders",
+                    "value": false
+                },
+                "transportationclimatecontrol": {
+                    "display": "Transportation and Climate Control",
+                    "value": false
+                },
+                "warehousing": {
+                    "display": "Warehousing",
+                    "value": false
+                }
+            },
+            "slug": "nice-farmer-c",
+            "abattoirservics": false,
+            "advertisingmarketingpromotions": false,
+            "coldstorage": false,
+            "consolidationaggregationhub": false,
+            "delivery": false,
+            "frozenstorage": false,
+            "fullservicedistribution": false,
+            "otherspecializedstorage": false,
+            "postharvesthandlingpacking": false,
+            "processing": false,
+            "sharingpuchaceorders": false,
+            "transportationclimatecontrol": false,
+            "warehousing": false,
+            "deleted": false,
+            "provided": true,
+            "created_at": "2021-04-13T14:10:20.651958Z",
+            "updated_at": "2021-04-13T14:10:20.651968Z",
+            "account": 3052
+        },
+        "title": "Farmer",
+        "first_name": "Michael",
+        "last_name": "Anderson",
+        "latitude": 0,
+        "longitude": 0,
+        "address_1": "123 East St.",
+        "address_2": "",
+        "city": "Napanee",
+        "province": "Ontario",
+        "country": "Canada",
+        "postal_code": "L4R 1W2"
+    },
+    "authed": {
+        "id": 3052,
+        "business_name": "Nice Farmer C.",
+        "slug": "nice-farmer-c",
+        "onf_users": [
+            {
+                "id": 3007,
+                "user": 3091,
+                "first_name": "Michael",
+                "last_name": "Anderson",
+                "email": "nice@broader.com",
+                "activated": true,
+                "is_owner": false,
+                "account": 3052,
+                "job_title": null,
+                "created_at": "2021-04-13T14:10:20.677548Z",
+                "updated_at": "2021-04-13T14:10:20.677554Z"
+            }
+        ],
+        "description": "A wonderful farm owned by a wonderful farmer.",
+        "photo_file_name": "https://d2f8amc6lmzigh.cloudfront.net/account/3052/blob",
+        "editable": true,
+        "greenbelt_location": false,
+        "hide_personal_info": false,
+        "premises_identification_number": false,
+        "phone": null,
+        "fax": null,
+        "cell": null,
+        "email": "mike@napanee.com",
+        "website": "http://mikenice.com/",
+        "twitter": "https://twitter.com/farmernice",
+        "facebook": "https://facebook.com/farmernice",
+        "instagram": "https://www.instagram.com/farmernice",
+        "linkedin": "https://linkedin.com/farmernice",
+        "online_store": "http://shop.mikenice.com/",
+        "onboarding": true,
+        "is_manager": false,
+        "roles": [
+            2,
+            1,
+            5,
+            3
+        ],
+        "category": [],
+        "has_location": true,
+        "title": "Farmer",
+        "first_name": "Michael",
+        "last_name": "Anderson",
+        "latitude": 0,
+        "longitude": 0,
+        "address_1": "123 East St.",
+        "address_2": "",
+        "city": "Napanee",
+        "province": "Ontario",
+        "country": "Canada",
+        "postal_code": "L4R 1W2"
+    },
+    "featured": {},
+    "newProfiles": {},
+    "fetch_public_profile": {
+        "requesting": false,
+        "successful": false,
+        "error": false
+    },
+    "requesting": false,
+    "successful": true,
+    "uploadRequesting": false,
+    "uploadSuccessful": false,
+    "editing": false,
+    "profileFiles": [],
+    "messages": [
+        {
+            "body": "Successfully retreieved profile!",
+            "time": "2021-05-01T01:01:52.641Z"
+        }
+    ],
+    "errors": []
+}

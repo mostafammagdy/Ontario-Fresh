@@ -1,0 +1,19 @@
+@use "../../assets/scss/variables/accessibility";
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/forms";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+@use "../../assets/scss/variables/typography";
+
+.formProfileAccordionMultipleItems {
+
+    &__validated {
+        @extend %validationMessage;
+    }
+
+    &__button {
+        @extend %formButton;
+        margin-top: -0.9em;
+    }
+
+}

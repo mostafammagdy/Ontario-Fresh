@@ -1,0 +1,17 @@
+@use "../../assets/scss/variables/accessibility";
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/forms";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.formProfileAccordionMultipleItems {
+
+    &__button {
+
+        &:hover, &:focus {
+            @extend %formButtonFocus;
+        }
+
+    }
+
+}

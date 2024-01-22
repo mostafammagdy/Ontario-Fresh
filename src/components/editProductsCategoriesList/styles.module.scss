@@ -1,0 +1,18 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.moveButton{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+@media only screen and (min-width: 851px) {
+
+    .categoryContainer {
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-height: 400px;
+    }
+    
+}

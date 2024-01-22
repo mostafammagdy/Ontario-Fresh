@@ -1,0 +1,18 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.loginContainer {
+  max-width: 960px;
+  margin: 2rem auto;
+}
+
+.loginHeader {
+  font-weight: 400;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+
+.formMessages {
+  text-align: center;
+}

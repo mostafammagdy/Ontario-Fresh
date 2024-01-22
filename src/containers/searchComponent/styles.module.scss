@@ -1,0 +1,128 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.collapseExpandedButton {
+  cursor: pointer;
+}
+
+.searchContainer {
+  max-width: 1160px;
+  margin: 2rem auto;
+}
+
+.searchHeader {
+  font-weight: 400;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+
+.divider {
+  color: #949799;
+  margin: 10px 0 !important;
+}
+
+.formMessages {
+  text-align: center;
+}
+
+.searchBar {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+}
+
+.preText {
+  display: flex;
+  background-color: white;
+  padding: 11px 6px 11px 16px;
+  font-weight: 700;
+  color: #6B6B6B;
+}
+
+.searchButton {
+  flex-basis: 150px;
+}
+.searchButton > button {
+  min-height: auto !important;
+  height: 48px !important;
+}
+
+.clearFiltersButton {
+  margin-bottom: 14px
+}
+
+.separator {
+  padding: 0 20px;
+}
+
+.filterHeading {
+  color: #FFFFFF;
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+.fieldLabel {
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.heading {
+  margin-top: 2rem;
+}
+
+.searchFilter, .classifiedFilter {
+  color: #FFFFFF;
+}
+
+.classifiedFilter {
+  font-size: 19px;
+}
+.classifiedFilter > svg {
+  vertical-align: text-bottom;
+}
+
+.filterNumber {
+  background-color: #A9ABAE;
+  color: black;
+  font-size: 15px;
+  padding: 0 5px;
+  border-radius: 4px;
+}
+
+.scrollToTop {
+	color: #6D6F7B;
+	cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+	float: right;
+}
+
+
+/*The classes below this line are for the Autosuggest component*/
+.container {  /* This class is needed to customize the input box in the Autosuggest widget */
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+}
+
+.input[type=text] {  /* This class is needed to customize the input box in the Autosuggest widget */
+  border: none;
+  padding: 11px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  border-radius: 2px 0 0 2px;
+}
+
+.input[placeholder] {  /* This class is needed to customize the input box in the Autosuggest widget */
+  font-weight: 100;
+}
+
+.suggestionsList {  /* This class is needed to customize the input box in the Autosuggest widget */
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  list-style-type: none;
+}

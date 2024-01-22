@@ -1,0 +1,253 @@
+@use '../../../../assets/scss/variables/accessibility';
+@use '../../../../assets/scss/variables/colours';
+@use '../../../../assets/scss/variables/forms';
+@use '../../../../assets/scss/variables/measurements';
+@use '../../../../assets/scss/variables/mixins';
+@use '../../../../assets/scss/variables/responsive';
+@use '../../../../assets/scss/variables/typography';
+
+$navigationTabletTop: 0.6em;
+$navigationTabletBottom: 1.25em;
+$navigationTabletLinkBorderWidth: 0.25em;
+$navigationTabletLinkPaddingBottom: 0.1em;
+$navigationTabletLinkBorderBottom: 0.2em solid colours.$backgroundGrey;
+$navigationTabletLinkBorderWidthBottom: 0.2em;
+
+.headerHub {
+
+    &__li {
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+
+        @media #{mixins.scrMinWidth(responsive.$desktop_min_width)} {
+            display: inline-block;
+            font-size: 0.89rem;
+            position: absolute;
+        }
+
+        &__viewB2bProfile {
+
+            @media #{mixins.scrMinWidth(responsive.$desktop_min_width)} {
+                border: {
+                    width: $navigationTabletLinkBorderWidth;
+                    style: solid;
+                    color: colours.$white;
+                }
+                right: 17.1em;
+                top: $navigationTabletTop;
+            }
+
+        }
+
+        &__viewB2cProfile {
+
+            @media #{mixins.scrMinWidth(responsive.$desktop_min_width)} {
+                border: {
+                    width: $navigationTabletLinkBorderWidth;
+                    style: solid;
+                    color: colours.$white;
+                }
+                right: 7.4em;
+                top: $navigationTabletTop;
+            }
+
+        }
+
+        &__myProfileHub {
+
+            @media #{mixins.scrMinWidth(responsive.$desktop_min_width)} {
+                left: 0;
+                bottom: $navigationTabletBottom;
+            }
+
+        }
+
+        &__activityFeed {
+
+            @media #{mixins.scrMinWidth(responsive.$desktop_min_width)} {
+                left: 9em;
+                bottom: $navigationTabletBottom;
+            }
+
+        }
+
+        &__classifieds {
+
+            @media #{mixins.scrMinWidth(responsive.$desktop_min_width)} {
+                left: 16.7em;
+                bottom: $navigationTabletBottom;
+            }
+
+        }
+
+        &__shipping {
+
+            @media #{mixins.scrMinWidth(responsive.$desktop_min_width)} {
+                left: 23.6em;
+                bottom: $navigationTabletBottom;
+            }
+
+        }
+
+        &__manageMembership {
+
+            @media #{mixins.scrMinWidth(responsive.$desktop_min_width)} {
+                left: 29.4em;
+                bottom: $navigationTabletBottom;
+            }
+
+        }
+
+        &__messages {
+
+            @media #{mixins.scrMinWidth(responsive.$desktop_min_width)} {
+                right: 7.2em;
+                bottom: $navigationTabletBottom;
+            }
+
+        }
+
+        &__settings {
+
+            @media #{mixins.scrMinWidth(responsive.$desktop_min_width)} {
+                right: 0;
+                bottom: $navigationTabletBottom;
+            }
+
+        }
+
+        &__logout {
+
+            @media #{mixins.scrMinWidth(responsive.$desktop_min_width)} {
+                border: {
+                    width: $navigationTabletLinkBorderWidth;
+                    style: solid;
+                    color: colours.$green;
+                }
+                right: 0;
+                top: $navigationTabletTop;
+            }
+
+        }
+
+    }
+
+    &__link {
+        width: 100%;
+        padding: 0.5em 1em;
+        display: block;
+        color: colours.$black;
+        text: {
+            align: left;
+            decoration: none;
+            transform: uppercase;
+        }
+        border-width: 0;
+        background-color: colours.$white;
+
+        @media #{mixins.scrMinWidth(responsive.$desktop_min_width)} {
+            width: auto;
+            display: inline-block;
+            background-color: transparent;
+        }
+
+        &__viewB2bProfile {
+
+            @media #{mixins.scrMinWidth(responsive.$desktop_min_width)} {
+                padding: {
+                    right: 0;
+                    bottom: $navigationTabletLinkPaddingBottom;
+                    left: 0;
+                }
+                border-bottom: $navigationTabletLinkBorderWidthBottom solid colours.$white;
+            }
+
+        }
+
+        &__viewB2cProfile {
+
+            @media #{mixins.scrMinWidth(responsive.$desktop_min_width)} {
+                padding: {
+                    right: 0;
+                    bottom: $navigationTabletLinkPaddingBottom;
+                    left: 0;
+                }
+                border-bottom: $navigationTabletLinkBorderWidthBottom solid colours.$white;
+            }
+
+        }
+
+        &__myProfileHub {
+
+            @media #{mixins.scrMinWidth(responsive.$desktop_min_width)} {
+                padding: 0 0 $navigationTabletLinkPaddingBottom;
+                border: $navigationTabletLinkBorderBottom;
+                border-width: 0 0 $navigationTabletLinkBorderWidthBottom;
+            }
+
+        }
+
+        &__activityFeed {
+
+            @media #{mixins.scrMinWidth(responsive.$desktop_min_width)} {
+                padding: 0 0 $navigationTabletLinkPaddingBottom;
+                border: $navigationTabletLinkBorderBottom;
+                border-width: 0 0 $navigationTabletLinkBorderWidthBottom;
+            }
+
+        }
+
+        &__classifieds {
+
+            @media #{mixins.scrMinWidth(responsive.$desktop_min_width)} {
+                padding: 0 0 $navigationTabletLinkPaddingBottom;
+                border: $navigationTabletLinkBorderBottom;
+                border-width: 0 0 $navigationTabletLinkBorderWidthBottom;
+            }
+
+        }
+
+        &__shipping {
+
+            @media #{mixins.scrMinWidth(responsive.$desktop_min_width)} {
+                padding: 0 0 $navigationTabletLinkPaddingBottom;
+                border: $navigationTabletLinkBorderBottom;
+                border-width: 0 0 $navigationTabletLinkBorderWidthBottom;
+            }
+
+        }
+
+        &__manageMembership {
+
+            @media #{mixins.scrMinWidth(responsive.$desktop_min_width)} {
+                padding: 0 0 $navigationTabletLinkPaddingBottom;
+                border: $navigationTabletLinkBorderBottom;
+                border-width: 0 0 $navigationTabletLinkBorderWidthBottom;
+            }
+
+        }
+
+        &__messages {
+
+            @media #{mixins.scrMinWidth(responsive.$desktop_min_width)} {
+                padding: 0 0 $navigationTabletLinkPaddingBottom;
+                border: $navigationTabletLinkBorderBottom;
+                border-width: 0 0 $navigationTabletLinkBorderWidthBottom;
+            }
+
+        }
+
+        &__settings {
+
+            @media #{mixins.scrMinWidth(responsive.$desktop_min_width)} {
+                padding: 0 0 $navigationTabletLinkPaddingBottom;
+                border: $navigationTabletLinkBorderBottom;
+                border-width: 0 0 $navigationTabletLinkBorderWidthBottom;
+            }
+            
+        }
+
+    }
+
+}

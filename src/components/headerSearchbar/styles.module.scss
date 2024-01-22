@@ -1,0 +1,68 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.searchHeader {
+  font-weight: 400;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+
+.formMessages {
+  text-align: center;
+}
+
+.searchBar {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  max-width: 760px;
+  margin-bottom: 0;
+  font-size: 14px;
+  flex-grow: 1;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+  .searchBar {
+    max-width: none;
+  }
+  
+}
+
+.separator {
+  padding: 0 20px;
+}
+
+/*The classes below this line are for the Autosuggest component*/
+.container {  /* This class is needed to customize the input box in the Autosuggest widget */
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.input[type=text] {  /* This class is needed to customize the input box in the Autosuggest widget */
+  display: flex;
+  border: none;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 11px;
+  height: 36px;
+  border: solid 1px;
+  border-color: #C4C4C4;
+}
+
+.input[placeholder] {  /* This class is needed to customize the input box in the Autosuggest widget */
+  font-weight: 100;
+}
+
+.suggestionsList {  /* This class is needed to customize the input box in the Autosuggest widget */
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  list-style-type: none;
+  text-transform: initial;
+  letter-spacing: initial;
+}

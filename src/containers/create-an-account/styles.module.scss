@@ -1,0 +1,53 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/forms";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.formContainer {
+	@extend %container;
+
+    &__block {
+        @extend %block;
+    }
+
+    &__heading {
+        @extend %heading;
+    }
+
+	&__rule {
+		height: 1px;
+		margin: -1px -36px 1.45em;
+		border: none;
+		background-color: colours.$formRuleGrey;
+	}
+
+    &__fieldset {
+		margin: {
+			top: 1.45em;
+			bottom: 0.75em;
+		}
+		border-width: 0;
+    }
+
+	&__flex {
+		@extend %flex;
+	}
+
+	&__button {
+		@extend %formButton;
+		margin-top: 1.45em;
+	}
+
+	/*
+
+	&__paragraph {
+		color: green;
+	}
+
+	&__form {
+
+	}
+
+	*/
+
+}

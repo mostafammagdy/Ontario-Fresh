@@ -1,0 +1,118 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.dashboardPageContainer {
+  max-width: 1160px;
+  margin: 2rem auto;
+}
+
+.profileTitle {
+  font-size: 1.125rem;
+  padding: 0 1rem;
+}
+
+.profileImage {
+  display: inline-flex;
+  align-items: center;
+}
+
+.profileImage img {
+  border-radius: 2px;
+  margin-bottom: 0;
+  height: auto;
+  max-height: 100px;
+}
+
+.profileLink {
+  display: block;
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dashboardColumnWithBorder {
+  border-right: 1px groove rgba(0, 0, 0, 0.2);
+  margin: 15px 0;
+  text-align: center;
+}
+
+.dashboardColumn {
+  margin: 15px 0;
+  text-align: center;
+}
+
+h2.dashboardStats {
+  margin-bottom: 0px;
+  padding-left: 1rem;
+}
+
+ul.feedList {
+  height: 550px;
+  overflow-y: scroll;
+}
+
+.emptyFeedContainer {
+  height: 550px;
+  width: 100%;
+  position: relative;
+}
+
+.emptyFeed {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+}
+
+.feedItem {
+  display: flex;
+  margin-bottom: -10px;
+}
+
+.feedText {
+  line-height: 40px;
+  margin-left: 1rem;
+}
+
+.businessName {
+  height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /*! autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+}
+
+@media only screen and (max-width: 349px) {
+
+  ul.feedList {
+    max-height: 320px;
+    overflow-y: auto;
+  }
+
+}
+
+@media only screen and (max-width: 48em) {
+
+  .dashboardColumnWithBorder {
+    border-right: none;
+  }
+
+  .emptyFeedContainer {
+    height: 200px;
+  }
+  
+}
+
+.scrollToTop {
+	color: #6D6F7B;
+	cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+	float: right;
+}

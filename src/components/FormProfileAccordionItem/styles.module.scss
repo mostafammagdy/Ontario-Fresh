@@ -1,0 +1,39 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/forms";
+@use "../../assets/scss/variables/mixins";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/typography";
+
+.accordion {
+
+    &__item {
+
+    }
+
+    &__heading {
+        
+    }
+
+}
+
+.profileHubForm {
+
+    &__validated {
+        @extend %validationMessage;
+    }
+
+    &__flex {
+        @extend %flex;
+    }
+
+    &__button {
+        @extend %formButton;
+        width: 16.8em;
+        margin: {
+            right: auto;
+            left: auto;
+        }
+        display: block;
+    }
+
+}

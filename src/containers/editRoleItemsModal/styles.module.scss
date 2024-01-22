@@ -1,0 +1,8 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.headerEditButton {
+  float: right;
+  margin-top: -2.5rem;
+}

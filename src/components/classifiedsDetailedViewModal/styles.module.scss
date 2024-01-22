@@ -1,0 +1,15 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.classifiedsDescription {
+  height: 150px;
+  overflow:auto;
+  border:1px solid #ccc;
+  padding: 10px 10px 0;
+}
+
+.fieldLabel {
+  font-weight: 700;
+  margin: 0.5rem auto 0.3rem;
+}

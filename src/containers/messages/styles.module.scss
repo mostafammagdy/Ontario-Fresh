@@ -1,0 +1,42 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.messagePageContainer {
+  max-width: 1160px;
+  margin: 2rem auto;
+}
+
+.messagePageInnerContainer {
+  min-height: calc(100vh - 250px);
+  margin: 0 1rem;
+}
+
+.profilesContainer {
+  height: calc(100% - 48px);
+  min-height: 184px;
+  overflow-y: auto;
+}
+
+.selectedConversation {
+  border-style: none none none solid;
+  border-color: green;
+}
+
+@media (max-width: 480px) {
+  .messagePageContainer {
+    margin: 2rem 0;
+  }
+
+  .messagePageInnerContainer {
+    margin: 0;
+  }
+
+  .section {
+    padding: 0;
+  }
+
+  .profilesContainer {
+    height: 184px;
+  }
+}

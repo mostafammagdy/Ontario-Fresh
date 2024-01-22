@@ -1,0 +1,34 @@
+@use "../../../../assets/scss/variables/colours";
+@use "../../../../assets/scss/variables/forms";
+
+.formProductSelectorProfileProducts {
+
+    &__errorAnchor {
+        
+        &:hover, &:focus {
+            color: colours.$errorTextFocus;
+        }
+
+    }
+
+    &__button {
+        
+        &:hover, &:focus {
+            @extend %formButtonFocus;
+        }
+
+    }
+
+    &__categories {
+
+        &__button {
+        
+            &:hover, &:focus {
+                @extend %formButtonFocus;
+            }
+
+        }
+
+    }
+
+}

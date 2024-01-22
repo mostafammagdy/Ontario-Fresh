@@ -1,0 +1,35 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.formInputText {
+
+    &__label {
+
+    }
+
+    &__input {
+
+    }
+
+    &--error {
+
+        .formInputText {
+
+            &__label {
+
+            }
+
+            &__input {
+                
+            }
+
+            &__description {
+                margin-top: 0.85em;
+            }
+
+        }
+
+    }
+
+}

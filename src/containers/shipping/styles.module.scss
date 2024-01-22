@@ -1,0 +1,25 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.shippingPageContainer {
+  max-width: 1160px;
+  margin: 2rem auto;
+}
+
+.alignRow {
+  display: flex;
+  align-items: center;
+}
+
+.shippingForm > div {
+  margin-bottom: 0 !important;
+}
+
+.scrollToTop {
+	color: #6D6F7B;
+	cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+	float: right;
+}

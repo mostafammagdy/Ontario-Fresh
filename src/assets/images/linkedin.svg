@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>post-linkedin</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Artboard-Copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-1459.000000, -132.000000)">
+        <g id="Group" transform="translate(1379.000000, 132.000000)">
+            <g id="linkedin" transform="translate(80.000000, 0.000000)">
+                <g id="post-linkedin">
+                    <path d="M39.5,8 L11.5,8 C9.575,8 8,9.575 8,11.5 L8,39.5 C8,41.425 9.575,43 11.5,43 L39.5,43 C41.425,43 43,41.425 43,39.5 L43,11.5 C43,9.575 41.425,8 39.5,8 Z M18.5,37.75 L13.25,37.75 L13.25,22 L18.5,22 L18.5,37.75 Z M15.875,19.025 C14.125,19.025 12.725,17.625 12.725,15.875 C12.725,14.125 14.125,12.725 15.875,12.725 C17.625,12.725 19.025,14.125 19.025,15.875 C19.025,17.625 17.625,19.025 15.875,19.025 Z M37.75,37.75 L32.5,37.75 L32.5,28.475 C32.5,27.075 31.275,25.85 29.875,25.85 C28.475,25.85 27.25,27.075 27.25,28.475 L27.25,37.75 L22,37.75 L22,22 L27.25,22 L27.25,24.1 C28.125,22.7 30.05,21.65 31.625,21.65 C34.95,21.65 37.75,24.45 37.75,27.775 L37.75,37.75 Z" id="Shape" fill="#00713F" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,21 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.pageContainer {
+  max-width: 1160px;
+  margin: 2rem auto;
+}
+
+.title {
+  color: #3d7f08;
+  font-size: 1.125rem;
+}
+
+.scrollToTop {
+	color: #6D6F7B;
+	cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+	float: right;
+}

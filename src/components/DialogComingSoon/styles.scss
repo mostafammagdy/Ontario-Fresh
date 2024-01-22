@@ -1,0 +1,56 @@
+@use "../../assets/scss/variables/accessibility";
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/mixins";
+@use "../../assets/scss/variables/responsive";
+
+.comingSoonDialog {
+
+    &__form {
+
+        .formInputText {
+
+            &__label {
+                margin-left: 1.25rem;
+            }
+
+            &__input {
+                padding: {
+                    top: 0.5em;
+                    bottom: 0.55em;
+                }
+
+                @media #{mixins.scrMinWidth(responsive.$tablet_ipad_portrait_min_width)} {
+                    width: 365px;
+                }
+
+            }
+
+        }
+
+        .formErrorMessage {
+            margin-left: 1.25rem;
+        }
+
+        &--error {
+            
+            .comingSoonDialog {
+                
+                &__form {
+                    
+                    &__submit {
+
+                        @media #{mixins.scrMinWidth(responsive.$tablet_ipad_portrait_min_width)} {
+                            bottom: 4.18rem;
+                        }
+
+                    }
+                    
+                }
+                
+            }
+
+        }
+
+    }
+
+}

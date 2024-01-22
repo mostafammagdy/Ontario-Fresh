@@ -1,0 +1,58 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.navBar {
+  font-size: 1.3rem;
+  font-weight: 100;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  top: 0;
+  transition: all .15s ease-out;
+  text-transform: uppercase;
+  padding: 1.2rem 0 0;
+  letter-spacing: 2px;
+  /* display: flex; */
+}
+
+.navContainer {
+  position: relative;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  justify-content: space-between;
+  display: flex;
+  /* flex-grow: 1; */
+}
+
+.headerItem {
+  align-items: center;
+  display: flex;
+}
+
+.textLogo {
+  font-weight: 100;
+  text-decoration: none;
+}
+
+.headerItem span {
+  color: #424242;
+}
+
+.offTop {
+  background: white;
+  padding-top: 0;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+}
+
+.offTop {
+  color: #424242 !important;
+}
+
+.headerItem span {
+  color: #424242;
+}
+
+.homeNav .headerItem span {
+  color: #FFFFFF;
+}

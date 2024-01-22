@@ -1,0 +1,85 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/forms";
+@use "../../assets/scss/variables/mixins";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/typography";
+
+.accordion {
+    border: {
+        color: colours.$white;
+        radius: 0.1em;
+    }
+
+    &__item {
+        
+    }
+
+    &__heading {
+        
+    }
+
+    &__button {
+        padding: 1.125em 1.125em 1.125em 2.25em;
+        font-weight: bold;
+        color: colours.$white;
+        background-color: colours.$green;
+        position: relative;
+
+        &:hover, &:focus {
+            color: colours.$green;
+            background-color: hsl(147, 51%, 90%);
+        }
+
+        $beforeWidth: 0.75em;
+
+        &::before {
+            width: $beforeWidth;
+            height: $beforeWidth;
+            margin: {
+                top: 0 - ($beforeWidth / 2);
+                right: 0;
+            }
+            border-width: 0 0.15em 0.15em 0;
+            position: absolute;
+            left: 0.75em;
+            top: 50%;
+        }
+
+        &[aria-expanded="true"] {
+            color: colours.$green;
+            background-color: hsl(147, 51%, 90%);
+
+            &::before {
+                margin-top: (0 - ($beforeWidth / 2)) - 0.2em;
+                left: 0.9em;
+            }
+
+        }
+
+    }
+
+    &__panel {
+        
+    }
+
+}
+
+.profileHubForm {
+
+    &__flex {
+
+		.formInputText {
+			@extend %flexFormInputText;
+		}
+
+    }
+
+    &__button {
+
+        &:hover, &:focus {
+            @extend %formButtonFocus;
+        }
+
+    }
+
+}

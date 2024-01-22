@@ -1,0 +1,54 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.uploadZone {
+  height: 200px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  font-size: 1.125rem;
+}
+
+.cropperZone {
+  height: 225px;
+  width: 225px;
+  margin: 10px auto;
+}
+
+.dropzone {
+  width: 225px;
+  height: 225px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  border-width: 2px;
+  border-color: #333;
+  border-style: dashed;
+  border-radius: 6px;
+  padding: 0.8rem;
+  cursor: pointer;
+}
+
+.dropzoneActive {
+  width: 225px;
+  height: 225px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(0, 112, 60);
+  border-radius: 6px;
+  padding: 0.8rem;
+  cursor: pointer;
+}
+
+.inkbar {
+  margin: 0 -24px;
+}

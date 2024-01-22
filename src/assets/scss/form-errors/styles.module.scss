@@ -1,0 +1,20 @@
+@use "../../scss/variables/colours";
+@use "../../scss/variables/responsive";
+@use "../../scss/variables/mixins";
+
+.formErrorList {
+    color: colours.$errorText;
+
+    &__errorList {
+
+        &__error {
+
+            &__anchor {
+                color: colours.$errorText;
+            }
+
+        }
+        
+    }
+
+}

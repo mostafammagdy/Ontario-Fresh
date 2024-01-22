@@ -1,0 +1,37 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.roleDescription {
+  background-color: #F3F3F3;
+}
+
+.roleDescriptionText {
+  padding: 20px 20px;
+  margin-bottom: 25px;
+}
+
+.roleDropdown {
+  min-width: 192px;
+  vertical-align: middle;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.roleRow {
+  margin-top: 25px;
+}
+
+.roleAddMore {
+  color: gray;
+  margin-bottom: 25px;
+}
+
+.roleAddMore:hover {
+  cursor: pointer;
+}
+
+.deleteRole:hover {
+  cursor: pointer;
+}

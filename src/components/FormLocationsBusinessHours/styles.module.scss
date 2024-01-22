@@ -1,0 +1,29 @@
+@use "../../assets/scss/variables/accessibility";
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/forms";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+@use "../../assets/scss/variables/typography";
+
+.formLocations {
+    
+    &__fieldset {
+        margin: {
+            bottom: 0;
+        }
+        border-width: 0;
+    }
+
+    &__validated {
+        @extend %validationMessage;
+    }
+
+	&__flex {
+		@extend %flex;
+	}
+
+    &__button {
+        @extend %formButton;
+    }
+
+}

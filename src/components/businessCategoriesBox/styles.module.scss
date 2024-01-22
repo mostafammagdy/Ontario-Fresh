@@ -1,0 +1,24 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.box {
+  padding: 1rem 1rem 0.5rem;
+  margin: -5.5rem auto 2.5rem;
+  max-width: 1000px;
+}
+
+.noBullet {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.expandCollapse {
+  font-size: 14px;
+  text-decoration-line: underline;
+}
+
+.expandCollapse:hover {
+  cursor: pointer;
+}

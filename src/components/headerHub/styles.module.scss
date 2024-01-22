@@ -1,0 +1,70 @@
+@use '../../assets/scss/variables/accessibility';
+@use '../../assets/scss/variables/colours';
+@use '../../assets/scss/variables/forms';
+@use '../../assets/scss/variables/measurements';
+@use '../../assets/scss/variables/mixins';
+@use '../../assets/scss/variables/responsive';
+@use '../../assets/scss/variables/typography';
+
+.headerHub {
+
+    &__label {
+        @extend %visually-hidden;
+    }
+
+    &__top {
+        height: 80px;
+        box-shadow: hsl(0, 0%, 60%) 0px 1px 0.9em 0;
+        background-color: colours.$white;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__maxWidth {
+        height: 100%;
+
+        @media #{mixins.scrMinWidth(responsive.$container_max_width)} {
+            max-width: responsive.$container_max_width;
+            margin: 0 auto;
+        }
+
+    }
+
+    &__container {
+        height: 100%;
+        margin: 0 2em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    &__logo {
+        width: 180px;
+        height: 47px;
+        background: {
+            image: url('../../assets/images/ontario-fresh-logo.png');
+            repeat: no-repeat;
+            position: left top;
+            size: 100%;
+        }
+
+        @media #{mixins.scrMinWidth(responsive.$desktop_min_width)} {
+            position: relative;
+            z-index: 3;
+        }
+
+    }
+
+    &__bottom {
+        display: none;
+
+        @media #{mixins.scrMinWidth(responsive.$desktop_min_width)} {
+            display: block;
+            height: 80px;
+            background-color: colours.$backgroundGrey;
+        }
+
+    }
+
+}

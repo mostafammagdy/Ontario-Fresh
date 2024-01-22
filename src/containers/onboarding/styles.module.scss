@@ -1,0 +1,16 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.stepContent {
+  padding-top: 10px;
+  margin-bottom: -16px;
+}
+
+@media only screen and (max-width: 48em) {
+
+  .stepContent {
+    padding-right: 0 !important;
+  }
+
+}

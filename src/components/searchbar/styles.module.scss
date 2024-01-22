@@ -1,0 +1,87 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.searchContainer {
+  margin: 2rem auto;
+}
+
+.searchHeader {
+  font-weight: 400;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+
+.formMessages {
+  text-align: center;
+}
+
+.searchBar {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  max-width: 760px;
+}
+
+.shadow {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+}
+
+.text-shadow {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+}
+
+.searchButton {
+  flex-basis: 150px;
+}
+.searchButton > button {
+  min-height: auto !important;
+  height: 48px !important;
+}
+
+.transparentButton {
+  margin-left: 20px;
+  flex-basis: 200px;
+}
+.transparentButton > button {
+  min-height: auto !important;
+  height: 42px !important;
+  line-height: 42px !important;
+}
+.transparentButton > button > div > div {
+  height: 42px !important;
+}
+
+.separator {
+  padding: 0 20px;
+}
+
+/*The classes below this line are for the Autosuggest component*/
+.container {  /* This class is needed to customize the input box in the Autosuggest widget */
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.input[type=text] {  /* This class is needed to customize the input box in the Autosuggest widget */
+  display: flex;
+  border: none;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 11px;
+  height: 48px;
+  border-radius: 2px 0 0 2px;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
+}
+
+.input[placeholder] {  /* This class is needed to customize the input box in the Autosuggest widget */
+  font-weight: 100;
+}
+
+.suggestionsList {  /* This class is needed to customize the input box in the Autosuggest widget */
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  list-style-type: none;
+  text-shadow: initial;
+}

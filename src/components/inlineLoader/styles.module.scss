@@ -1,0 +1,100 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.inlineLoader {
+  height: 60px;
+  position: relative;
+  overflow: hidden;
+  background: #EEE;
+  margin: 0;
+}
+
+.animatedBackground {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+
+  animation-duration: 1.2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: placeholder;
+
+  background: linear-gradient(to right, #EEE 8%, #DDD 18%, #EEE 33%);
+  background-size: 800px 104px;
+}
+
+@keyframes placeholder {
+
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+  
+}
+
+.masking {
+  height: 100%;
+  position: relative;
+  z-index: 2;
+  display: flex;
+}
+
+.blocks {
+  width: 100%;
+}
+
+.topClipping {
+  height: 12px;
+  width: 100%;
+  background: #FFF;
+}
+
+.middleClipping {
+  height: 6px;
+  width: 100%;
+  background: #FFF;
+}
+
+.bottomClipping {
+  height: 14px;
+  width: 100%;
+  background: #FFF;
+}
+
+.shortBlock {
+  display: flex;
+  height: 20px;
+  width: 100%;
+}
+
+.shortBlock div:nth-child(1) {
+  width: 65%;
+  background: transparent;
+}
+
+.shortBlock div:nth-child(2) {
+  flex-grow: 1;
+  background: #FFF;
+}
+
+.longBlock {
+  display: flex;
+  height: 20px;
+  width: 100%;
+}
+
+.longBlock div:nth-child(1) {
+  width: 100%;
+  background: transparent;
+}
+
+.longBlock div:nth-child(2) {
+  flex-grow: 1;
+  background: #FFF;
+}

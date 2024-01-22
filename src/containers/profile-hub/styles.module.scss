@@ -1,0 +1,94 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/forms";
+@use "../../assets/scss/variables/mixins";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/typography";
+
+.formContainer {
+	@extend %container;
+
+    &__block {
+        @extend %block;
+    }
+
+    &__heading {
+        @extend %heading;
+        padding-bottom: 0.5em;
+        font-size: 2.2rem;
+        text-align: center;
+        border-bottom: 0.05em solid colours.$green;
+        color: colours.$green;
+
+        & strong {
+            text-transform: lowercase;
+        }
+
+        & em {
+            font-weight: 400;
+            color: colours.$midGreen;
+            text-transform: lowercase;
+        }
+
+        & span {
+            font-weight: 400;
+            text-transform: lowercase;
+        }
+
+    }
+
+}
+
+.profileNav {
+    margin-bottom: 1.45rem;
+
+    &__ul {
+        margin: 0;
+        padding: 0;
+
+        @media #{mixins.scrMinWidth(responsive.$tablet_ipad_portrait_min_width)} {
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+    }
+
+    &__li {
+        margin: {
+            top: 0.75em;
+            bottom: 0.75em;
+        }
+        padding: 0;
+        list-style-type: none;
+        text: {
+            align: center;
+            transform: uppercase;
+        }
+
+        @media #{mixins.scrMinWidth(responsive.$tablet_ipad_portrait_min_width)} {
+            margin: {
+                top: 0;
+                right: 0.75em;
+                bottom: 0;
+                left: 0.75em;
+            }
+        }
+
+    }
+
+    &__link {
+        padding: 1em 2em;
+        display: inline-block;
+        font-size: 0.85rem;
+        text-decoration: none;
+        color: colours.$white;
+        border-radius: 0.4em;
+        background-color: colours.$green;
+
+        &:hover, &:focus {
+            background-color: colours.$midGreen;
+        }
+
+    }
+
+}

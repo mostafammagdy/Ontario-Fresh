@@ -1,0 +1,49 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.footer {
+  background-color: #FFFFFF;
+  padding: 2rem 2rem 1rem;
+  width: 100%;
+  color: #424242;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+  font-size: 0.7rem;
+  text-align: justify;
+}
+
+.footerColumn {
+  padding: 0 1rem;
+}
+
+.copyText {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.altFooterHeading {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+@media only screen and (max-width: 48em) {
+
+  .altFooterHeading {
+    margin-top: 30px;
+  }
+  
+}
+
+.footerButton {
+  padding-top: 8px;
+  width: 170px;
+  height: 36px;
+}
+
+.footerButtonText {
+  text-decoration: none;
+  color: #00703C;
+  font-size: 14px;
+  font-weight: 500;
+}

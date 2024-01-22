@@ -1,0 +1,64 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+@use "../../assets/scss/variables/measurements";
+@use "../../assets/scss/variables/typography";
+
+.cardText {
+  padding: measurements.$cardTextPadding;
+  font-size: typography.$cardTextFontSize;
+  color: colours.$cardTextBlack;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #424242;
+
+}
+
+.location, .name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.location, .description {
+  color: #6D6F7B;
+}
+
+.description {
+  height: 50px;
+  overflow-y: hidden;
+}
+
+.description span {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /*! autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+}
+
+.descriptionThreeByThree {
+  height: 50px;
+  overflow-y: hidden;
+}
+
+.descriptionThreeByThree span {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /*! autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+}
+
+hr.separator {
+  margin: 0.3rem auto !important;
+  opacity: 0.7;
+}
+
+.cardImage {
+  height: 146px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

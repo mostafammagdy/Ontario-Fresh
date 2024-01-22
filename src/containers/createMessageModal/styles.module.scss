@@ -1,0 +1,38 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.dropzone {
+  display: inline;
+}
+
+.uploadFileButton {
+  clear: left;
+  float: right;
+  max-width: 60%;
+  color: #000;
+  background-color: rgb(245, 244, 245);
+  padding: 6px 12px;
+  margin: 5px 0;
+  font-size: 14px;
+  border-radius: 0.2rem;
+  border: 1px solid #E1E1E1;
+  display: flex;
+  align-items: center;
+}
+
+.fileDownloadLink {
+  text-decoration: none;
+}
+
+.filePlaceholder {
+  height: 50px;
+}
+
+@media only screen and (max-width: 48em) {
+
+  .filePlaceholder {
+    height: 2rem;
+  }
+  
+}

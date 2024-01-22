@@ -1,0 +1,127 @@
+@use "../../assets/scss/variables/accessibility";
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/forms";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.formRadioButtonsGroup {
+    @extend %checkboxRadioGroup;
+
+    &__legend {
+        @extend %legend;
+    }
+
+    &__flex {
+        @extend %flex;
+    }
+
+    &__container {
+        @extend %checkboxRadioContainer;
+    }
+
+    &__labelTooltip {
+        @extend %labelTooltip;
+
+        &__labelWrapper {
+            @extend %labelWrapper;
+            display: inline-block;
+        }
+
+    }
+
+    &__label {
+        @extend %checkboxRadioLabel;
+
+        &--masthead {
+            display: block;
+        }
+
+    }
+
+    &__input {
+        @extend %checkboxRadioInput;
+
+        &--masthead {
+            display: block;
+        }
+
+    }
+
+    &__radio {
+        @extend %visually-hidden;
+    }
+
+    &__masthead {
+        width: auto;
+        margin: {
+            bottom: 0;
+        }
+        border: 2px solid colours.$white;
+        opacity: 0.5;
+
+        @media #{mixins.scrMinWidth(responsive.$tablet_ipad_portrait_min_width)} {
+            width: 100%;
+        }
+
+    }
+
+    &__styledRadio {
+        @extend %styledCheckboxRadio;
+        border-radius: 0.5em;
+    }
+
+    &__labelText {
+
+        &--hidden {
+            @extend %visually-hidden;
+        }
+
+    }
+
+    &--error {
+        color: colours.$errorText;
+
+        .formRadioButtonsGroup {
+
+            &__legend {
+                color: colours.$errorTextFocus;
+            }
+
+            /*
+            &__container {
+
+            }
+
+            &__label {
+
+            }
+
+            &__input {
+
+            }
+
+            &__checkbox {
+
+            }
+
+            &__styledCheckbox {
+                
+            }
+
+            
+            &__labelText {
+
+            }
+            */
+
+            &__masthead {
+                border: {
+                    color: colours.$errorTextFocus;
+                }
+            }
+
+        }
+
+    }
+
+}

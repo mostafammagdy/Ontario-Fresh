@@ -1,0 +1,171 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.profileContainer {
+  max-width: 1160px;
+  margin: 2rem auto;
+}
+
+.breadCrumbs {
+  color: #A6A7AE;
+  font-size: 12px;
+}
+
+.breadCrumbs a:link {
+  color: #A6A7AE;
+  text-decoration: none;
+}
+
+.currentCrumb {
+  font-weight: 600;
+  color: #7E7F89;
+}
+
+.profileInfo {
+  margin-top: 1rem;
+}
+
+.profileTitle {
+  font-size: 1.3rem;
+}
+
+.profileDetails {
+  padding-bottom: 1rem;
+  font-size: 14px;
+}
+
+.cancelButton {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 30px;
+}
+
+.cancelButton:hover {
+  cursor: pointer;
+}
+
+.chip {
+  margin: 4px !important;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profileDescription {
+  overflow: hidden;
+  max-height: 250px;
+}
+
+.profileDescriptionLong {
+  overflow: hidden;
+}
+
+.ellipse:hover {
+  cursor: pointer;
+}
+
+.profileSidebar {
+  position: relative;
+}
+
+.profileImage {
+  display: flex;
+  height: 204px;
+  margin-bottom: 1.45rem;
+  justify-content: center;
+  align-items: center;
+}
+.profileImage img {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  /*flex-basis: 100%; /*ie compatibility*/
+}
+.profileImageIE {
+  display: flex;
+  height: 204px;
+  margin-bottom: 1.45rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.profileImageEditButton {
+  position: absolute;
+  width: 100%;
+}
+
+.businessTypesSection {
+  margin-top: 20px;
+}
+
+/*
+.twoColumns {
+  -moz-column-count: 2;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 20px;
+  column-count: 2;
+  column-gap: 20px;
+  margin-left: 0;
+  list-style-type: inside;
+  white-space: pre-wrap;
+}
+*/
+
+.subHeader {
+  margin-bottom: 12px;
+}
+
+.contactInformation {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  padding-bottom: 1rem;
+}
+
+.uploadFileButton {
+  /* height: 36px;
+  max-width: 210px; */
+  display: block;
+  padding: 6px 12px;
+  font-size: 14px;
+  border-radius: 0.2rem;
+  border: 1px solid #E1E1E1;
+  background-color: #F4F4F4;
+  display: flex;
+  align-items: center;
+}
+
+.uploadFileLabel {
+  margin: 0 4px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 200px;
+  word-wrap: normal;
+}
+
+.dropzone:hover {
+  cursor: pointer;
+}
+
+.files {
+  margin: 0 8px 8px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.files > * {
+  margin: 8px 0 0 8px;
+}
+
+.scrollToTop {
+	color: #6D6F7B;
+	cursor: pointer;
+  margin-bottom: 20px;
+	float: right;
+}

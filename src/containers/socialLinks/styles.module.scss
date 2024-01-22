@@ -1,0 +1,11 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.buttonContainer > div {
+  margin-bottom: 10px;
+}
+
+.buttonContainer > div:last-child {
+  margin-bottom: 0px;
+}

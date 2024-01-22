@@ -1,0 +1,20 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.tabs {
+  width: 100%;
+  display: flex;
+  padding: 0.5rem 0 1.2rem;
+}
+
+.fieldError {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: -26px;
+}
+
+.fieldWarning {
+  color: #333;
+  font-size: 14px;
+}

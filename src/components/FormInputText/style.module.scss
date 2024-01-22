@@ -1,0 +1,55 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/forms";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.formInputText {
+    font-weight: normal;
+
+    &__labelTooltip {
+        @extend %labelTooltip;
+
+        &__labelWrapper {
+            @extend %labelWrapper;
+        }
+
+    }
+
+    &__label {
+        @extend %label;
+    }
+
+    &__input {
+        width: 100%;
+        margin: 0.5em auto 1em;
+        padding: 0.3em 0.5em;
+        border-radius: 0.2em;
+        border: 0.1em solid colours.$formInputTextGrey;
+    }
+
+    &__description {
+        @extend %description;
+        margin: {
+            top: 0;
+            bottom: 1.177em;
+        }
+    }
+
+    &--error {
+
+        .formInputText {
+
+            &__label {
+                color: colours.$errorTextFocus;
+            }
+
+            &__input {
+                margin-bottom: 0.25em;
+                border-color: colours.$errorTextFocus;
+            }
+
+        }
+
+    }
+
+}

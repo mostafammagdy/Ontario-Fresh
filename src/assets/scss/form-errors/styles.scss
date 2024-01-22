@@ -1,0 +1,39 @@
+@use "../../scss/variables/colours";
+@use "../../scss/variables/responsive";
+@use "../../scss/variables/mixins";
+
+.formErrorList {
+
+    &--error {
+
+        .formErrorList {
+
+            &__alert {
+        
+                &:focus {
+                    color: colours.$errorTextFocus;
+                }
+
+            }
+
+            &__errorList {
+
+                &__error {
+
+                    &__anchor {
+
+                        &:hover, &:focus {
+                            color: colours.$errorTextFocus;
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

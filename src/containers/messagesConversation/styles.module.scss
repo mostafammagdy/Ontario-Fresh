@@ -1,0 +1,119 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.messagesHeader {
+  padding-left: 20px;
+  padding-bottom: 8px;
+  line-height: 48px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.messagesHeaderLink {
+  text-decoration: none;
+}
+
+.messagesContainer {
+  padding: 1rem;
+  height: calc(100vh - 500px);
+  overflow-y: auto;
+  flex-grow: 1;
+  min-height: 200px;
+}
+
+.messageItem {
+  position: relative;
+  overflow: hidden;
+}
+
+.messageUtilities {
+  padding: 0px 0.8rem;
+}
+
+.messageActions {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 0.3rem;
+  align-items: center;
+  margin-top: -15px;
+}
+
+.fileDownloadLink {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.uploadStatus {
+  float: right;
+}
+
+.uploadComplete {
+  display: flex;
+  align-items: center;
+}
+
+.chatTimestamp {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 12px;
+}
+
+.chatBubble {
+  clear: left;
+  float: left;
+  max-width: 60%;
+  color: #000;
+  background-color: rgb(245, 244, 245);
+  padding: 6px 12px;
+  margin: 5px 0;
+  font-size: 14px;
+  border-radius: 1.2rem;
+}
+
+.chatRectangle {
+  clear: left;
+  float: left;
+  max-width: 60%;
+  color: #000;
+  background-color: rgb(245, 244, 245);
+  padding: 6px 12px;
+  margin: 5px 0;
+  font-size: 14px;
+  border-radius: 0.2rem;
+  border: 1px solid #E1E1E1;
+}
+
+.myMessage {
+  clear: right;
+  float: right;
+  background-color: rgb(0, 112, 60);
+  color: white;
+}
+
+.myMessageFile {
+  clear: right;
+  float: right;
+  background-color: #F4F4F4;
+}
+
+.dropzone {
+  width: auto;
+  height: auto;
+}
+
+.suggestionMessagesHeader {
+  padding: 0px 20px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.suggestionsList {  /* This class is needed to customize the input box in the Autosuggest widget */
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

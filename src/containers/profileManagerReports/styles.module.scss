@@ -1,0 +1,12 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.dashboardPageContainer {
+  max-width: 1160px;
+  margin: 2rem auto;
+}
+.alignLeft {
+  display: flex;
+  justify-content: flex-end;
+}

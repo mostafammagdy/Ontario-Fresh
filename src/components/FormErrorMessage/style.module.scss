@@ -1,0 +1,8 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.formErrorMessage {
+    line-height: 1.2;
+    color: colours.$errorTextFocus;
+}

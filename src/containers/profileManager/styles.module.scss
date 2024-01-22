@@ -1,0 +1,72 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.profileManagePageContainer {
+  max-width: 1160px;
+  margin: 2rem auto;
+}
+
+.managedProfile:hover {
+  background-color: #7FBF7F;
+}
+
+.profileLink {
+  display: block;
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dashboardColumnWithBorder {
+  border-right: 1px groove rgba(0, 0, 0, 0.2);
+  margin: 15px 0;
+  text-align: center;
+}
+
+.dashboardColumn {
+  margin: 15px 0;
+  text-align: center;
+}
+
+.businessName {
+  height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /*! autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+}
+
+.columnTextDisplay {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 48em) {
+
+  .dashboardColumnWithBorder {
+    border-right: none;
+  }
+
+}
+
+@media only screen and (max-width: 47.9em) and (min-width: 27em) {
+
+  .mobileHardcode {
+    width: 50%;
+    flex-basis: unset !important;
+  }
+  
+}
+
+.scrollToTop {
+	color: #6D6F7B;
+	cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+	float: right;
+}

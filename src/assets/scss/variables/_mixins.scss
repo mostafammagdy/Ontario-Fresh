@@ -1,0 +1,13 @@
+@use './responsive';
+
+/*
+    Feed your responsive variable from _vars.scss’s “RESPONSIVE” section to quickly add a min-width media query.
+
+    Example:
+    @media #{scrMinWidth(responsive.$tablet_min_width)} {
+        // ...write your tablet min-width styles...
+    }
+*/
+@function scrMinWidth($minWidth) {
+	@return "all and (min-width: " + $minWidth + ")";
+}

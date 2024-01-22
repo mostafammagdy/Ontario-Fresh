@@ -1,0 +1,24 @@
+{
+    "current": {},
+    "authed": {},
+    "featured": {},
+    "newProfiles": {},
+    "fetch_public_profile": {
+        "requesting": false,
+        "successful": false,
+        "error": false
+    },
+    "requesting": true,
+    "successful": false,
+    "uploadRequesting": false,
+    "uploadSuccessful": false,
+    "editing": false,
+    "profileFiles": [],
+    "messages": [
+        {
+            "body": "Basic profile for authed user being requested",
+            "time": "2021-04-30T14:29:38.374Z"
+        }
+    ],
+    "errors": []
+}

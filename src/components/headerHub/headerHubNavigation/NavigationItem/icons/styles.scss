@@ -1,0 +1,26 @@
+@use '../../../../../assets/scss/variables/accessibility';
+@use '../../../../../assets/scss/variables/colours';
+@use '../../../../../assets/scss/variables/forms';
+@use '../../../../../assets/scss/variables/measurements';
+@use '../../../../../assets/scss/variables/mixins';
+@use '../../../../../assets/scss/variables/responsive';
+@use '../../../../../assets/scss/variables/typography';
+
+.headerHub {
+
+    &__icon {
+
+        .gears {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+
+            path {
+                background-color: colours.$black;
+            }
+
+        }
+
+    }
+
+}

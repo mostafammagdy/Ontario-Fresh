@@ -1,0 +1,11 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+@media only screen and (max-width: 850px) {
+
+  .responsiveStepper {
+    display: none;
+  }
+
+}

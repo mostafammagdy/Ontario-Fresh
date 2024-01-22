@@ -1,0 +1,51 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.inkbar {
+  margin: 0 -24px;
+}
+
+.tabContent {
+  margin: 0 24px;
+}
+
+.headerEditButton {
+  float: right;
+  margin-top: -4rem;
+}
+
+.subheaderEditButton {
+  float: right;
+  margin-top: -3em;
+}
+
+.contactEdit {
+  float: right;
+  position: absolute;
+  right: 8px;
+}
+
+.searchComponentUpdateAddressButton > div > span {
+  padding: 0 !important;
+}
+
+.roleTitle {
+  padding-top: 0;
+  margin-bottom: 0;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.roleDescription {
+  margin-top: 25px;
+  background-color: #F3F3F3;
+  display: flex;
+  align-items: center;
+}
+
+.roleDescriptionText {
+  padding: 20px 20px;
+  width: 100%;
+}

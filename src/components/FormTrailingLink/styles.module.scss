@@ -1,0 +1,39 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/forms";
+@use "../../assets/scss/variables/mixins";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/typography";
+
+.trailingLink {
+    width: 16.8em;
+    margin: {
+        top: 0.5em;
+        right: auto;
+        left: auto;
+    }
+    display: block;
+
+    &__container {
+        @extend %labelTooltip;
+        // width: 15.1em;
+        padding-right: 0;
+    }
+
+    &__link {
+        @extend %formButton;
+        // width: 20.1em;
+        margin-top: 0;
+        padding: {
+            right: 1.5em;
+            left: 1.5em;
+        }
+        font-size: 0.75rem;
+        text-align: center;
+
+        &:hover, &:focus {
+            @extend %formButtonFocus;
+        }
+
+    }
+
+}

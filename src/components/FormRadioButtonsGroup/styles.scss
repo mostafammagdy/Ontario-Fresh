@@ -1,0 +1,248 @@
+@use "../../assets/scss/variables/accessibility";
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/forms";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.formRadioButtonsGroup {
+
+    &__legend {
+
+        .tooltip__wrapper {
+            font-weight: 400;
+            position: relative;
+            top: 0.05em;
+            right: -0.2em;
+        }
+
+    }
+
+    /*
+    &__label {
+        display: grid;
+        grid-template-columns: min-content auto;
+        grid-gap: 0.5em;
+        font-size: 1rem;
+    }
+    */
+
+    /*
+    &__input {
+
+        /*
+        & > * {
+            grid-area: checkbox;
+        }
+        *
+        
+    }
+    */
+
+    &__label {
+        
+        &--masthead {
+
+            &:nth-child(odd) {
+                padding-right: 0.3em;
+            }
+
+            &:nth-child(even) {
+                padding-left: 0.3em;
+            }
+
+        }
+
+    }
+
+    &__flex {
+
+        .formRadioButtonsGroup {
+
+            &__container {
+                @extend %checkboxRadioFlexedContainer;
+
+                &--masthead {
+
+                    @media #{mixins.scrMinWidth(responsive.$tablet_ipad_portrait_min_width)} {
+                        width: 50%;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    &__labelTooltip {
+
+        &__labelWrapper {
+
+            .tooltip__wrapper {
+                right: 0 - 0.95em;
+                top: 0;
+            }
+
+        }
+
+    }
+
+    &__radio {
+        @extend %visually-hidden;
+
+        + .formRadioButtonsGroup__styledRadio {
+            
+            .radioButtonChecked {
+                transform: scale(0, 0);
+            }
+
+        }
+
+        &:focus {
+
+            + .formRadioButtonsGroup__styledRadio {
+                background-color: colours.$formInputFocusGreenLight;
+            }
+
+            + .formRadioButtonsGroup__masthead {
+                border: {
+                    color: colours.$green;
+                }
+                opacity: 1;
+            }
+
+        }
+
+        &:checked {
+
+            + .formRadioButtonsGroup__styledRadio {
+                background-color: colours.$green;
+                
+                .radioButtonChecked {
+                    transform: scale(1, 1);
+                }
+
+            }
+
+            + .formRadioButtonsGroup__masthead {
+                border: {
+                    color: colours.$green;
+                }
+                opacity: 1;
+            }
+
+            &:focus {
+
+                + .formRadioButtonsGroup__styledRadio {
+                    background-color: colours.$formInputFocusGreenLight;
+                }
+
+            }
+
+        }
+
+    }
+
+    &__styledRadio {
+    
+        @keyframes burst {
+            from {
+                background-color: rgba(15, 107, 56, 0.5);
+                transform: scale(0);
+            }
+            to {
+                background-color: rgba(15, 107, 56, 0);
+                transform: scale(3);
+            }
+        }
+
+        $burstAnimationTiming: 0.5s;
+
+        .radioButtonBurst {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            &.animateBurst {
+                animation: burst $burstAnimationTiming ease-out;
+            }
+
+        }
+
+        .radioButtonChecked {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: transform $burstAnimationTiming ease-out;
+
+            .background {
+                fill: transparent;
+            }
+
+            .check {
+                fill: colours.$white;
+            }
+
+        }
+
+    }
+
+    &__masthead {
+
+        &:hover {
+            border: {
+                color: colours.$green;
+            }
+            opacity: 1;
+            cursor: pointer;
+        }
+
+    }
+
+    &--error {
+        color: colours.$errorText;
+
+        .formRadioButtonsGroup {
+
+            &__legend {
+                color: colours.$errorTextFocus;
+            }
+
+            /*
+            &__container {
+
+            }
+
+            &__label {
+
+            }
+
+            &__input {
+
+            }
+
+            &__checkbox {
+
+            }
+
+            &__styledCheckbox {
+                
+            }
+
+            &__labelText {
+
+            }
+            */
+
+        }
+
+    }
+
+}

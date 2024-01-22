@@ -1,0 +1,269 @@
+@use "../../assets/scss/variables/accessibility";
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/forms";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.formCheckboxesGroup {
+
+    &__legend {
+
+        .tooltip__wrapper {
+            font-weight: 400;
+            position: relative;
+            top: 0.05em;
+            right: -0.2em;
+        }
+
+    }
+
+    /*
+    &__label {
+        display: grid;
+        grid-template-columns: min-content auto;
+        grid-gap: 0.5em;
+        font-size: 1rem;
+    }
+    */
+
+    /*
+    &__input {
+
+        /*
+        & > * {
+            grid-area: checkbox;
+        }
+        *
+        
+    }
+    */
+
+    /*
+
+    &__label {
+        
+        &--icon {
+
+            &:nth-child(odd) {
+                padding-right: 0.3em;
+            }
+
+            &:nth-child(even) {
+                padding-left: 0.3em;
+            }
+
+        }
+
+    }
+
+    */
+
+    &__flex {
+
+        .formCheckboxesGroup {
+
+            &__container {
+                @extend %checkboxRadioFlexedContainer;
+            }
+
+        }
+
+    }
+
+    &__icons {
+
+        .formCheckboxesGroup {
+
+            &__container {
+                @extend %checkboxRadioFlexedContainer;
+
+                &--icon {
+                    width: 33.33%;
+
+                    @media #{mixins.scrMinWidth(responsive.$tablet_ipad_portrait_min_width)} {
+                        width: 20%;
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    &__labelTooltip {
+
+        &__labelWrapper {
+
+            .tooltip__wrapper {
+                right: 0 - 0.95em;
+                top: 0;
+            }
+
+        }
+
+    }
+
+    &__checkbox {
+        @extend %visually-hidden;
+
+        + .formCheckboxesGroup__styledCheckbox {
+            
+            .checkboxButtonChecked {
+                transform: scale(0, 0);
+            }
+
+        }
+
+        &:focus {
+
+            + .formCheckboxesGroup__styledCheckbox {
+                background-color: colours.$formInputFocusGreenLight;
+            }
+
+            + .formCheckboxesGroup__icon {
+                border: {
+                    color: colours.$white;
+                }
+                // opacity: 1;
+            }
+
+        }
+
+        &:checked {
+
+            + .formCheckboxesGroup__styledCheckbox {
+                background-color: colours.$green;
+                
+                .checkboxButtonChecked {
+                    transform: scale(1, 1);
+                }
+
+            }
+
+            + .formCheckboxesGroup__icon {
+                border: {
+                    color: colours.$green;
+                }
+                opacity: 1;
+            }
+
+            &:focus {
+
+                + .formCheckboxesGroup__styledCheckbox {
+                    background-color: colours.$formInputFocusGreenLight;
+                }
+
+            }
+
+        }
+
+    }
+
+    &__styledCheckbox {
+    
+        @keyframes burst {
+            from {
+                background-color: rgba(15, 107, 56, 0.5);
+                transform: scale(0);
+            }
+            to {
+                background-color: rgba(15, 107, 56, 0);
+                transform: scale(3);
+            }
+        }
+
+        $burstAnimationTiming: 0.5s;
+
+        .checkboxButtonBurst {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            &.animateBurst {
+                animation: burst $burstAnimationTiming ease-out;
+            }
+
+        }
+
+        .checkboxButtonChecked {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            transition: transform $burstAnimationTiming ease-out;
+
+            .background {
+                fill: transparent;
+            }
+
+            .check {
+                fill: colours.$white;
+            }
+
+        }
+
+    }
+
+    &__icon {
+
+        &:hover {
+            border: {
+                color: colours.$green;
+            }
+            opacity: 1;
+            cursor: pointer;
+        }
+
+    }
+
+    &--error {
+        color: colours.$errorText;
+
+        .formCheckboxesGroup {
+
+            &__legend {
+                color: colours.$errorTextFocus;
+            }
+
+            /*
+            &__container {
+
+            }
+
+            &__label {
+
+            }
+
+            &__input {
+
+            }
+
+            &__checkbox {
+
+            }
+
+            &__styledCheckbox {
+                
+            }
+
+            &__labelText {
+
+            }
+            */
+
+        }
+
+    }
+
+    &--emphasized {
+        margin-top: 2em;
+    }
+
+}

@@ -1,0 +1,40 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.formMessages {
+  text-align: center;
+}
+
+.roleTitle {
+  padding-top: 0;
+  margin-bottom: 0;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.roleDescription {
+  margin-top: 25px;
+  background-color: #F3F3F3;
+  display: flex;
+  align-items: center;
+}
+
+.roleDescriptionText {
+  padding: 20px 20px;
+  width: 100%;
+}
+
+.profileLink {
+  display: block;
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: underline;
+}
+
+.profileLink:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,31 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.legend {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    align-content: flex-start;
+}
+.legend > div {
+    flex: 1 0 50%;
+}
+.item {
+    display: flex;
+    align-items: center;
+}
+.colour {
+    width: 20px;
+    height: 20px;
+}
+.label {
+    margin-left: 0.5em;
+    font-weight: 300;
+    font-size: 16px;
+    color: #364151;
+    letter-spacing: -0.02em;
+}

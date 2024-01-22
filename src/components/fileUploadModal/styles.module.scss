@@ -1,0 +1,47 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.uploadZone {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  font-size: 1.125rem;
+}
+
+.dropzone {
+  width: 100%;
+  height: 220px;
+  border-width: 2px;
+  border-color: #333;
+  border-style: dashed;
+  border-radius: 6px;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.dropzoneActive {
+  width: 100%;
+  border-width: 2px;
+  border-color: #333;
+  border-style: solid;
+  border-radius: 6px;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.highlight {
+  font-weight: 700;
+}
+
+.fileIcon {
+  vertical-align: center;
+}
+
+.fileAddedContainer {
+  display: flex;
+}

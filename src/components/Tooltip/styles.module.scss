@@ -1,0 +1,113 @@
+@use "../../assets/scss/variables/accessibility";
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/forms";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.tooltip {
+
+    &__label {
+        @extend %visually-hidden;
+    }
+
+    $launchWidth: 1.4em;
+
+    &__wrapper {
+        overflow: visible;
+        display: inline-block;
+        position: absolute;
+        right: 0 - ($launchWidth + 0.25);
+    }
+
+    &__launch {
+        width: $launchWidth;
+        height: $launchWidth;
+        display: flex;
+        align-items: center;
+        color: colours.$white;
+        border: {
+            width: 0;
+            radius: $launchWidth / 2;
+        }
+        background-color: colours.$green;
+
+        &__icon {
+            width: 100%;
+            font: {
+                size: 1rem;
+                weight: 700;
+            }
+            line-height: 1;
+            text-align: center;
+        }
+
+    }
+
+    $tipWidth: 10em;
+    $tipHorizPadding: 1em;
+
+    &__tip {
+        width: $tipWidth;
+        margin-left: 0 - ($tipWidth / 2);
+        padding: 0.5em $tipHorizPadding;
+        border: {
+            width: 1px;
+            style: solid;
+            color: colours.$black;
+            radius: 0.3em;
+        }
+        background-color: colours.$white;
+        position: absolute;
+        left: 50%;
+        bottom: 2.15em;
+        z-index: 1;
+
+        &__p {
+            margin: {
+                top: 0.1em;
+                bottom: 0.1em;
+            }
+            font-size: 0.8125rem;
+        }
+
+        $closeWidth: 0.8em;
+        $closePosition: 0.15em;
+
+        &__close {
+            width: $closeWidth;
+            min-height: auto;
+            height: $closeWidth;
+            padding: 0;
+            overflow: hidden;
+            border-width: 0;
+            background-color: transparent;
+            position: absolute;
+            right: $closePosition;
+            top: $closePosition;
+        }
+
+        $arrowWidth: 0.75em;
+
+        &__arrow {
+            width: $arrowWidth;
+            height: $arrowWidth;
+            margin-left: 0 - $arrowWidth / 2;
+            overflow: hidden;
+            border: {
+                top-width: 0;
+                right-width: 1px;
+                bottom-width: 1px;
+                left-width: 0;
+                style: solid;
+                color: colours.$black;
+            }
+            transform: rotate(45deg);
+            background-color: colours.$white;
+            position: absolute;
+            left: 50%;
+            bottom: 0 - (($arrowWidth / 2) + 0.05);
+        }
+
+    }
+
+}

@@ -1,0 +1,5 @@
+export const SAVE_USER_REQUESTING = 'userSettings/SAVE_USER_REQUESTING'
+export const SAVE_USER_REQUEST_SUCCESS = 'userSettings/SAVE_USER_REQUEST_SUCCESS'
+export const SAVE_USER_REQUEST_ERROR = 'userSettings/SAVE_USER_REQUEST_ERROR'
+export const OPEN_EMAIL_MODAL = 'userSettings/OPEN_EMAIL_MODAL'
+export const CLOSE_EMAIL_MODAL = 'userSettings/CLOSE_EMAIL_MODAL'

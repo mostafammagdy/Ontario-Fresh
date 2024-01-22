@@ -1,0 +1,12 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.pageContainer {
+  max-width: 1160px;
+  margin: 2rem auto;
+}
+
+.title {
+  color: #3d7f08;
+}

@@ -1,0 +1,159 @@
+@use '../../../../assets/scss/variables/accessibility';
+@use '../../../../assets/scss/variables/colours';
+@use '../../../../assets/scss/variables/forms';
+@use '../../../../assets/scss/variables/measurements';
+@use '../../../../assets/scss/variables/mixins';
+@use '../../../../assets/scss/variables/responsive';
+@use '../../../../assets/scss/variables/typography';
+
+.headerHub {
+
+    &__link {
+
+        &:hover, &:focus {
+            color: colours.$green;
+            background-color: colours.$navigationHoverGrey;
+
+            @media #{mixins.scrMinWidth(responsive.$tablet_ipad_portrait_min_width)} {
+                background-color: transparent;
+            }
+
+        }
+
+        &__viewB2bProfile, &__viewB2cProfile, &__myProfileHub, &__activityFeed, &__classifieds, &__shipping, &__manageMembership, &__messages, &__settings {
+            
+            &--active {
+                color: colours.$white;
+                background-color: colours.$green;
+
+                @media #{mixins.scrMinWidth(responsive.$desktop_min_width)} {
+                    color: colours.$black;
+                    border-bottom-color: colours.$green;
+                    background-color: transparent;
+                }
+
+            }
+
+        }
+
+        &__messages {
+
+            .headerHub {
+
+                &__icon {
+                    top: -0.15em;
+
+                    @media #{mixins.scrMinWidth(responsive.$desktop_min_width)} {
+                        top: -0.05em;
+                    }
+
+                }
+
+            }
+
+            &--active {
+
+                .headerHub {
+
+                    &__circle {
+                        background-color: colours.$white;
+
+                        @media #{mixins.scrMinWidth(responsive.$desktop_min_width)} {
+                            background-color: colours.$green;
+                        }
+
+                    }
+                    
+                    &__messageCounter {
+                        color: colours.$green;
+
+                        @media #{mixins.scrMinWidth(responsive.$desktop_min_width)} {
+                            color: colours.$white;
+                        }
+
+                    }
+
+                }
+
+                &:hover, &:focus {
+
+                    .headerHub {
+
+                        &__circle {
+                            background-color: colours.$green;
+
+                            @media #{mixins.scrMinWidth(responsive.$desktop_min_width)} {
+                                background-color: colours.$green;
+                            }
+
+                        }
+                        
+                        &__messageCounter {
+                            color: colours.$white;
+
+                            @media #{mixins.scrMinWidth(responsive.$desktop_min_width)} {
+                                color: colours.$white;
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        &__settings {
+
+            &--active {
+
+                .headerHub {
+
+                    &__icon {
+
+                        .gears {
+
+                            path {
+                                fill: colours.$white;
+
+                                @media #{mixins.scrMinWidth(responsive.$desktop_min_width)} {
+                                    fill: colours.$black;
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+                &:hover, &:focus {
+
+                    .headerHub {
+
+                        &__icon {
+
+                            .gears {
+
+                                path {
+                                    fill: colours.$black;
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

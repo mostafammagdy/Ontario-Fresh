@@ -1,0 +1,174 @@
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/forms";
+@use "../../assets/scss/variables/mixins";
+@use "../../assets/scss/variables/responsive";
+
+.formFileUploader {
+
+    &__errorParagraph {
+        margin-bottom: 0.75em;
+    }
+
+    &__errorAnchor {
+        color: colours.$errorText;
+    }
+
+    &__validated {
+        @extend %validationMessage;
+    }
+
+    &__labelTooltip {
+        @extend %labelTooltip;
+
+        &__labelWrapper {
+            @extend %labelWrapper;
+        }
+
+    }
+
+    &__label {
+        @extend %label;
+    }
+
+    &__dragDropArea {
+        margin-top: 0.5em;
+        position: relative;
+        background-color: colours.$white;
+
+        &__icon {
+            width: 60px;
+            height: 42px;
+            margin-left: 0 - (60px / 2);
+            position: absolute;
+            left: 50%;
+            top: 2em;
+
+            @media #{mixins.scrMinWidth(responsive.$tablet_ipad_portrait_min_width)} {
+                width: 110px;
+                height: 77px;
+                margin-left: 0 - (110px / 2);
+                top: 2.25em;
+            }
+
+        }
+
+        &__button {
+            // @extend %formButton;
+            width: 100%;
+            height: 11em;
+            /*
+            margin: {
+                top: 0;
+                bottom: 0.5em
+            }
+            */
+            background-color: transparent;
+            // border: 2px dashed colours.$green;
+            border-width: 0;
+            background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='hsl(0, 0%, 75%)' stroke-width='9' stroke-dasharray='16%2c 30' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+
+            @media #{mixins.scrMinWidth(responsive.$tablet_ipad_portrait_min_width)} {
+                height: 13em;
+            }
+
+            &__label {
+                width: 11em;
+                display: inline-block;
+                color: colours.$green;
+                position: relative;
+                top: 2em;
+
+                @media #{mixins.scrMinWidth(responsive.$tablet_ipad_portrait_min_width)} {
+                    width: 17.5em;
+                    font-size: 1.6em;
+                    line-height: 1.2;
+                }
+
+            }
+
+        }
+
+    }
+
+    &__dragDrop {
+        width: 100%;
+        height: 100%;
+        // background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+    }
+
+    &__imageCropArea {
+        margin: {
+            top: 0.5em;
+        }
+        position: relative;
+
+        @media #{mixins.scrMinWidth(responsive.$tablet_ipad_portrait_min_width)} {
+            margin: {
+                top: 0.75em;
+            }
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__wrapper {
+            width: 269px;
+            margin: {
+                right: auto;
+                left: auto;
+            }
+            
+            @media #{mixins.scrMinWidth(responsive.$tablet_ipad_portrait_min_width)} {
+                width: 318px;
+                margin: {
+                    right: 0.5em;
+                    left: 0.5em;
+                }
+            }
+            
+            @media #{mixins.scrMinWidth(responsive.$desktop_min_width)} {
+                width: 414px;
+            }
+
+        }
+
+    }
+
+    &__button {
+        @extend %formButton;
+        width: 16.8em;
+        margin: {
+            right: auto;
+            left: auto;
+        }
+        display: block;
+    }
+
+    &__currentLogoPhoto {
+        margin: 0;
+        padding: 0;
+
+        &__li {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+
+            &__img {
+                width: 40px;
+
+                @media #{mixins.scrMinWidth(responsive.$tablet_ipad_portrait_min_width)} {
+                    width: 80px;
+                }
+
+            }
+
+        }
+
+    }
+
+}

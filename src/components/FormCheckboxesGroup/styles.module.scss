@@ -1,0 +1,162 @@
+@use "../../assets/scss/variables/accessibility";
+@use "../../assets/scss/variables/colours";
+@use "../../assets/scss/variables/forms";
+@use "../../assets/scss/variables/responsive";
+@use "../../assets/scss/variables/mixins";
+
+.formCheckboxesGroup {
+    @extend %checkboxRadioGroup;
+
+    &__legend {
+        @extend %legend;
+    }
+
+    &__flex {
+        @extend %flex;
+    }
+
+    &__center {
+
+        @media #{mixins.scrMinWidth(responsive.$tablet_ipad_portrait_min_width)} {
+            width: 75%;
+            margin: {
+                right: auto;
+                left: auto;
+            }
+        }
+
+        @media #{mixins.scrMinWidth(responsive.$desktop_min_width)} {
+            width: 60%;
+        }
+
+    }
+
+    &__icons {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+
+    &__container {
+        @extend %checkboxRadioContainer;
+    }
+
+    &__labelTooltip {
+        @extend %labelTooltip;
+
+        &__labelWrapper {
+            @extend %labelWrapper;
+            display: inline-block;
+        }
+
+    }
+
+    &__label {
+        @extend %checkboxRadioLabel;
+
+        &--icon {
+            display: block;
+        }
+
+    }
+
+    &__input {
+        @extend %checkboxRadioInput;
+
+        &--icon {
+            display: block;
+        }
+
+    }
+
+    &__checkbox {
+        @extend %visually-hidden;
+    }
+
+    &__icon {
+        width: 80px;
+        height: 80px;
+        margin: {
+            right: auto;
+            bottom: 0;
+            left: auto;
+        }
+        display: block;
+        border: 2px solid colours.$white;
+        // opacity: 0.5;
+
+        @media #{mixins.scrMinWidth(responsive.$tablet_ipad_portrait_min_width)} {
+            width: 100%;
+        }
+
+    }
+
+    &__styledCheckbox {
+        @extend %styledCheckboxRadio;
+        border-radius: 0.25em;
+    }
+
+    &__labelText {
+
+        &--hidden {
+            @extend %visually-hidden;
+        }
+
+    }
+
+    &__description {
+        @extend %description;
+        margin: {
+            top: 0.5em;
+            left: 1.75em;
+        }
+    }
+
+    &--error {
+        color: colours.$errorText;
+
+        .formCheckboxesGroup {
+
+            &__legend {
+                color: colours.$errorTextFocus;
+            }
+
+            /*
+            &__container {
+
+            }
+
+            &__label {
+
+            }
+
+            &__input {
+
+            }
+
+            &__checkbox {
+
+            }
+
+            &__styledCheckbox {
+                
+            }
+
+            &__labelText {
+
+            }
+            */
+
+            /*
+            &__icon {
+                border: {
+                    color: colours.$errorTextFocus;
+                }
+            }
+            */
+
+        }
+
+    }
+
+}
