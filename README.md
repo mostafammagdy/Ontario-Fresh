@@ -26,7 +26,7 @@ The Ontario Fresh React application is a modern web platform built using React, 
 
 1. **Clone the Repository:**
    ```bash
-   git clone <repository-url>
+   git clone <https://github.com/mostafammagdy/Ontario-Fresh.git>
    cd ontario-fresh-react
    ```
 
